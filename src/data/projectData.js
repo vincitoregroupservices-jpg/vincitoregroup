@@ -94,7 +94,7 @@ const projectData = [
       { src: "/projects/vincitore-sky/VincitoreSky-12.jpeg" },
     ],
     video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
-    brochure: "/projects/vincitore-valley/VincitoreSky.pdf",
+    brochure: "/projects/vincitore-sky/VincitoreSky.pdf",
   },
   {
     slug: "vincitore-rivera",
@@ -200,7 +200,7 @@ const projectData = [
       { src: "/projects/vincitore-rivera/VincitoreRivera-15.jpeg" },
     ],
     video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
-    brochure: "/projects/vincitore-valley/VincitoreRivera.pdf",
+    brochure: "/projects/vincitore-rivera/VincitoreRivera.pdf",
   },
   {
     slug: "vincitore-vintage",

@@ -50,7 +50,6 @@ export default function ProjectPage({ params }) {
   };
 
   const handleDownload = async (e) => {
-    console.log("Working");
 
     e.preventDefault();
     const { name, mobile } = formData;
