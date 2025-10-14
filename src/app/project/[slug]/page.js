@@ -96,8 +96,6 @@ export default function ProjectPage({ params }) {
     }
   };
 
-
-
   return (
     <main className="w-full">
       <HeroSection project={project} />
@@ -115,7 +113,9 @@ export default function ProjectPage({ params }) {
       <WhyChoose project={project} />
       <Line />
       <LocationCTA project={project} />
-      <RERACompliance project={project} />
+      {project.rera.reraNumber != "Comming Soon" && (
+        <RERACompliance project={project} />
+      )}
       <CTASection project={project} />
 
       {/* Fixed bottom bar */}
@@ -125,7 +125,7 @@ export default function ProjectPage({ params }) {
       >
         <div className="hidden md:flex flex-col text-gold-dark">
           RERA Registration No.
-          <h1 className="text-4xl font-bold">MAA10160</h1>
+          <h1 className="text-4xl font-bold">{project.rera.reraNumber}</h1>
         </div>
 
         <div className="w-full md:w-fit text-gold-dark flex items-center justify-between gap-4">

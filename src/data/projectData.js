@@ -148,7 +148,7 @@ const projectData = [
     ],
     rera: {
       reraNumber: "MAA13050",
-      reraLink: "https://gujrera.gujarat.gov.in/",
+      reraLink: "https://gujrera.gujarat.gov.in/?/#/pp?id=MjA1MjQ=",
       qr: "vincitore-rivera.png",
     },
     gallery: [
@@ -236,7 +236,7 @@ const projectData = [
     ],
     rera: {
       reraNumber: "MAA14018",
-      reraLink: "https://gujrera.gujarat.gov.in/",
+      reraLink: "https://gujrera.gujarat.gov.in/?/#/pp?id=MjM4MzI=",
       qr: "vincitore-vintage.png",
     },
     gallery: [
@@ -325,7 +325,7 @@ const projectData = [
     ],
     rera: {
       reraNumber: "MAA11744",
-      reraLink: "https://gujrera.gujarat.gov.in/",
+      reraLink: "https://gujrera.gujarat.gov.in/?/#/pp?id=MTg3NzU=",
       qr: "vincitore-valley.png",
     },
     gallery: [

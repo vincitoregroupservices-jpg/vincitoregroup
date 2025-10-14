@@ -6,7 +6,7 @@ const LocationAdvantage = ({ project }) => {
   return (
     <Section>
       <SectionTitle text={"Location Advantage"} />
-      <ol className="text-md w-[80%] md:w-[60%] m-auto marker:text-gold-dark list-disc">
+      <ol className="text-md md:text-lg w-[80%] md:w-[60%] m-auto marker:text-gold-dark list-disc">
         {project.locationAdvantages.map((ele, index) => (
           <li key={index} className="my-3">
             {ele}
