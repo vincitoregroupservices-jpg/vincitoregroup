@@ -39,13 +39,13 @@ const projectData = [
     commercial: {
       spaces: "Ground + 3 Floors",
       units: "34 Premium Units",
-      sizeRange: "736 – 2619 sq.ft",
+      sizeRange: "736 to 2619 sq.ft",
       priceFrom: "₹70* Lakhs",
     },
     residential: {
       spaces: "3 & 4 BHK Luxury Apartments",
       units: "70 Luxury Units",
-      sizeRange: "294 – 416 sq. yards",
+      sizeRange: "294 to 416 sq. yards",
       priceFrom: "₹1.03* Cr.",
     },
     amenities: [
@@ -123,13 +123,13 @@ const projectData = [
     commercial: {
       spaces: "Ground Floors",
       units: "22 Premium Units",
-      sizeRange: "444 – 2064 sq. ft",
+      sizeRange: "444 to 2064 sq. ft",
       priceFrom: "50* Lakh",
     },
     residential: {
       spaces: "3 BHK Luxury Apartments & Alloted Parking",
       units: "118 Luxury Units",
-      sizeRange: "221 – 238 sq. yards",
+      sizeRange: "221 to 238 sq. yards",
       priceFrom: "65* Lakh.",
     },
     amenities: [
@@ -211,7 +211,7 @@ const projectData = [
     commercial: {
       spaces: "Ground Floors",
       units: "30 Premium Units",
-      sizeRange: "506 – 3255 sq. ft",
+      sizeRange: "506 to 3255 sq. ft",
       priceFrom: "60* Lakh",
     },
     residential: {
@@ -300,13 +300,13 @@ const projectData = [
     commercial: {
       spaces: "Ground + 1 Floors",
       units: "46 Premium Units",
-      sizeRange: "320 – 2772 sq. ft",
+      sizeRange: "320 to 2772 sq. ft",
       priceFrom: "35* Lakh",
     },
     residential: {
       spaces: "3 & 4 BHK Luxury Apartments + Alloted Car Parking",
       units: "267 Luxury Units",
-      sizeRange: "152 – 214 sq. yards",
+      sizeRange: "152 to 214 sq. yards",
       priceFrom: "38* Lakh",
     },
     amenities: [
@@ -369,7 +369,7 @@ const projectData = [
     typeSummary: ["2 BHK & 3 BHK Luxury Flats", "Shops & Showrooms Available"],
     tagline: {
       quate: "A Landmark of Luxury and Convenience.",
-      heading: "The 7 – Your New Address",
+      heading: "The 7 to Your New Address",
       description:
         "Offering 2 & 3 BHK luxury homes with integrated shops and modern amenities, The 7 Vincitore is crafted for urban lifestyles.",
     },
@@ -388,20 +388,20 @@ const projectData = [
     ],
     Why: [
       "Ready-to-Move Luxury Homes",
-      "Prime Location – Hanspura",
+      "Prime Location to Hanspura",
       "Shops, Showrooms & Flats in One Landmark",
       "Spacious Green Areas & Modern Amenities",
     ],
     commercial: {
       spaces: "Ground Floors",
       units: "30 Premium Units",
-      sizeRange: "400 – 1086 sq. ft",
+      sizeRange: "400 to 1086 sq. ft",
       priceFrom: "₹50* Lakhs",
     },
     residential: {
       spaces: "3 & 4 BHK Luxury Apartments + Alloted Parking",
       units: "168 Luxury Units",
-      sizeRange: "164 – 242 sq. yards",
+      sizeRange: "164 to 242 sq. yards",
       priceFrom: "₹35.26* Lakhs",
     },
     amenities: [
@@ -472,7 +472,7 @@ const projectData = [
     residential: {
       spaces: "5 BHK Super Luxury Bungalow",
       units: "21 Super Luxury Units",
-      sizeRange: "668 – 842 sq. yards",
+      sizeRange: "668 to 842 sq. yards",
       priceFrom: "₹3.50* Cr.",
     },
     amenities: [
