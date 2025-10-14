@@ -1,9 +1,20 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/Button/Button";
 import Section from "../ui/Section/Section";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
+import { useState } from "react";
 
 export default function HeroSection({ project }) {
+  const [dialogOpen, setDialogOpen] = useState(false);
   return (
     <>
       <section
@@ -50,9 +61,42 @@ export default function HeroSection({ project }) {
                 {ele}
               </h3>
             ))}
-            <Link href={`tel:${project.contact[0]}`}>
-              <Button className={"mt-3"} text="Enquire Now" />
-            </Link>
+
+            {project.contact.length > 1 ? (
+              <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+                <DialogTrigger>
+                  <Button text={"Enquire Now"} />
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-[425px] bg-background">
+                  <DialogHeader>
+                    <DialogTitle>Enquire Now</DialogTitle>
+                    <DialogDescription className="mb-4 text-muted-foreground">
+                      Select a contact number below to contact us.
+                    </DialogDescription>
+                    {project.contact.map((ele, index) => (
+                      <Link
+                        href={`tel:${ele}`}
+                        className="text-xl underline cursor-pointer flex gap-3 items-center"
+                        key={index}
+                        onClick={()=>{setDialogOpen(false)}}
+                      >
+                        <Image
+                        src={'/icons/Call.svg'}
+                        height={300}
+                        width={300}
+                        className="h-4 w-auto"
+                        />
+                        {ele}
+                      </Link>
+                    ))}
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+            ) : (
+              <Link href={`tel:${project.contact[0]}`}>
+                <Button className={"mt-3"} text="Enquire Now" />
+              </Link>
+            )}
           </div>
         </div>
       </section>
