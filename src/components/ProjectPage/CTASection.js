@@ -71,7 +71,7 @@ const CTASection = ({ project }) => {
             </Dialog>
           ) : (
             <Link href={`tel:${project.contact[0]}`}>
-              <Button className={"mt-3"} text="Enquire Now" />
+              <Button text="Enquire Now" />
             </Link>
           )}
         </div>
