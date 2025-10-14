@@ -52,9 +52,10 @@ const GlimpsesOfOurJourney = () => {
             punch: "+",
           },
           {
-            value: "18%",
-            label: "Minimum Return Guaranty (Annually)",
-            punch: "+",
+            value: "2.1",
+            label: "Sq. Ft. Under Construction",
+            punch: "M+",
+            decimalPlaces: 1
           },
           {
             value: "90",

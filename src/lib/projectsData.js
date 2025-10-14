@@ -95,7 +95,7 @@ export const projectData = [
     category_size_2: "400 – 1086 sq. ft",
     imageUrl: "/projects/the-7-vincitore/The7Vincitore-2.jpeg",
     review: "4.9",
-    status: "Newly Launch",
+    status: "Comming Soon",
     link: "https://www.google.com/maps/embed?...",
   },
   {
@@ -115,7 +115,7 @@ export const projectData = [
     category_size_2: "668 – 842 sq. yards",
     imageUrl: "/projects/shivalay-bunglols/ShivalayBunglols-2.jpg",
     review: "4.8",
-    status: "Newly Launch",
+    status: "Comming Soon",
     link: "https://www.google.com/maps/embed?...",
   },
 ];

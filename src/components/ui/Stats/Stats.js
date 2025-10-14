@@ -40,7 +40,7 @@ const Stats = ({ stats }) => {
               <NumberTicker
                 value={stat.value}
                 decimalPlaces={stat.decimalPlaces}
-                className="text-8xl font-bold tracking-tighter whitespace-pre-wrap text-gold-dark"
+                className="text-8xl font-medium tracking-tighter whitespace-pre-wrap text-gold-dark"
               />
               <p className="text-8xl font-bold tracking-tighter whitespace-pre-wrap text-gold-dark">
                 {stat.punch}
