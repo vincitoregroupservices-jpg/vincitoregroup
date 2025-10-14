@@ -16,19 +16,19 @@ const WhoAreWe = () => {
       <Stats
         stats={[
           {
-            value: "15+",
+            value: "15",
             label: "Years of Excellence",
             punch: "+",
           },
           {
-            value: "1000+",
+            value: "1000",
             label: "Happy Families",
             punch: "+",
           },
           {
-            value: "50+",
+            value: "50",
             label: "Skilled Experts",
-            punch: "M+",
+            punch: "+",
           },
         ]}
       />
