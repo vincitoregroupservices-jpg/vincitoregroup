@@ -113,6 +113,8 @@ export default function ProjectPage({ params }) {
       <WhyChoose project={project} />
       <Line />
       <LocationCTA project={project} />
+      <Line />
+
       {project.rera.reraNumber != "Comming Soon" && (
         <RERACompliance project={project} />
       )}
