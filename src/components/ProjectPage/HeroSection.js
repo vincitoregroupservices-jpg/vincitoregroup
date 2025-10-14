@@ -11,10 +11,58 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../ui/dialog";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 
 export default function HeroSection({ project }) {
   const [dialogOpen, setDialogOpen] = useState(false);
+
+  // Refs for GSAP
+  const headingRef = useRef(null);
+  const locationRef = useRef(null);
+  const tagsRef = useRef([]);
+  const contactRef = useRef(null);
+
+  useEffect(() => {
+    // Heading animation
+    gsap.from(headingRef.current, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+
+    // Location/status fade
+    gsap.from(locationRef.current, {
+      y: 20,
+      opacity: 0,
+      duration: 1,
+      delay: 0.3,
+      ease: "power3.out",
+    });
+
+    // Interest tags stagger
+    gsap.from(tagsRef.current, {
+      y: 20,
+      opacity: 0,
+      stagger: 0.2,
+      delay: 0.5,
+      duration: 0.8,
+      ease: "power3.out",
+    });
+
+    // Contact section slide in
+    if (contactRef.current) {
+      gsap.from(contactRef.current, {
+        x: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.7,
+        ease: "power3.out",
+      });
+    }
+  }, []);
+
   return (
     <>
       <section
@@ -27,10 +75,14 @@ export default function HeroSection({ project }) {
         {/* Content */}
         <div className="relative z-10 flex-col flex md:flex-row md:justify-center md:items-center gap-5 md:gap-10 px-10">
           <div className="flex flex-col gap-3">
-            <h1 className="text-gold text-4xl md:text-5xl font-medium">
+            <h1
+              ref={headingRef}
+              className="text-gold text-4xl md:text-5xl font-medium"
+            >
               {project.name}
             </h1>
-            <p className="flex gap-1 text-white">
+
+            <p ref={locationRef} className="flex gap-1 text-white">
               <Image
                 src={"/icons/location2.svg"}
                 height={500}
@@ -40,9 +92,11 @@ export default function HeroSection({ project }) {
               />{" "}
               {project.locationSummary} | {project.status}
             </p>
+
             <p className="flex gap-2">
               {project.interest.map((ele, index) => (
                 <span
+                  ref={(el) => (tagsRef.current[index] = el)}
                   className="bg-gold-light text-black-2 px-3 py-1 rounded-sm text-sm font-medium"
                   key={index}
                 >
@@ -51,8 +105,10 @@ export default function HeroSection({ project }) {
               ))}
             </p>
           </div>
+
           <span className="md:h-[100px] md:w-[1px] h-[1px] w-[100px] bg-gold-lighter" />
-          <div className="flex flex-col gap-3">
+
+          <div className="flex flex-col gap-3" ref={contactRef}>
             {project.typeSummary.map((ele, index) => (
               <h3
                 key={index}
@@ -78,13 +134,15 @@ export default function HeroSection({ project }) {
                         href={`tel:${ele}`}
                         className="text-xl underline cursor-pointer flex gap-3 items-center"
                         key={index}
-                        onClick={()=>{setDialogOpen(false)}}
+                        onClick={() => {
+                          setDialogOpen(false);
+                        }}
                       >
                         <Image
-                        src={'/icons/Call.svg'}
-                        height={300}
-                        width={300}
-                        className="h-4 w-auto"
+                          src={"/icons/Call.svg"}
+                          height={300}
+                          width={300}
+                          className="h-4 w-auto"
                         />
                         {ele}
                       </Link>
@@ -100,6 +158,7 @@ export default function HeroSection({ project }) {
           </div>
         </div>
       </section>
+
       <Section className="gap-3 items-center justify-center mt-15">
         <h1 className="text-4xl w-[80vw] md:w-[30vw] text-center">
           {project.tagline.heading}
