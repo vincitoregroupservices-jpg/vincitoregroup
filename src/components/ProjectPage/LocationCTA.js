@@ -9,7 +9,7 @@ const LocationCTA = ({ project }) => {
     <div
       className="relative flex flex-col gap-5 items-center justify-center text-center py-20 mt-10"
       style={{
-        backgroundImage: `url(${project.thumbnail})`,
+        backgroundImage: `url(${project.thumbnail2})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

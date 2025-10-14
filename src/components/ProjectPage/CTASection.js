@@ -16,7 +16,7 @@ const CTASection = ({ project }) => {
     <div
       className="relative flex flex-col items-center justify-center text-center py-20"
       style={{
-        backgroundImage: `url(${project.thumbnail})`,
+        backgroundImage: `url(${project.thumbnail1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
