@@ -15,7 +15,7 @@ const LocationCTA = ({ project }) => {
       }}
     >
       <div className="absolute inset-0 bg-black opacity-80"></div>
-      <Section>
+      <section>
         <Image
           src={"/icons/location3.svg"}
           height={500}
@@ -29,7 +29,7 @@ const LocationCTA = ({ project }) => {
         <Link href={project.locationLink} target="_blank">
           <Button text="Get Google Location" />
         </Link>
-      </Section>
+      </section>
     </div>
   );
 };

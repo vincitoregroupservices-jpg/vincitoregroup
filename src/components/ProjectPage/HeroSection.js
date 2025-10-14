@@ -6,7 +6,7 @@ import Section from "../ui/Section/Section";
 export default function HeroSection({ project }) {
   return (
     <>
-      <Section
+      <section
         className="relative h-[80vh] md:h-[80vh] flex items-center justify-center bg-cover bg-center pt-20"
         style={{ backgroundImage: `url(${project.thumbnail})` }}
       >
@@ -55,7 +55,7 @@ export default function HeroSection({ project }) {
             </Link>
           </div>
         </div>
-      </Section>
+      </section>
       <Section className="gap-3 items-center justify-center mt-15">
         <h1 className="text-4xl w-[80vw] md:w-[30vw] text-center">
           {project.tagline.heading}
