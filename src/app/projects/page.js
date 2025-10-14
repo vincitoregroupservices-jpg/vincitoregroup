@@ -315,13 +315,13 @@ const Page = () => {
             ))}
           </div>
         ) : (
-          <div className="w-full my-12 flex flex-col items-center justify-center gap-1">
+          <div className="w-full my-12 flex flex-col items-center justify-center gap-1 mix-blend-multiply">
             <Image
               src="/images/no-projects.gif"
               width={1000}
               height={1000}
               alt="No projects"
-              className="h-[20vh] md:h-[30vh] w-auto object-contain mix-blend-multiply"
+              className="h-[20vh] md:h-[30vh] w-auto object-contain bg-blend-multiply"
             />
             <h2 className="text-3xl font-bold text-gold-dark text-center">
               Oops! No Projects Found

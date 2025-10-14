@@ -18,7 +18,7 @@ const Amenities = ({ project }) => {
   };
 
   return (
-    <Section>
+    <div>
       <SectionTitle text={`World-Class Amenities at ${project.name}`} />
 
       <div className="relative">
@@ -26,20 +26,21 @@ const Amenities = ({ project }) => {
           {project.amenities.map((item, index) => (
             <div key={index} className={styles.amenityCard}>
               <div className="h-14 w-14 md:h-20 md:w-20 rounded-full flex items-center justify-center bg-gold p-3 md:p-5">
-                <Image
+                {/* <Image
                   src={`/amenities/gym.svg`}
                   width={40}
                   height={40}
                   className="h-full w-auto"
                   alt={item.name}
-                />
+                /> */}
+                <span className="material-symbols-outlined h-full w-auto bg-red-200 text-[#111]">fitness_center</span>
               </div>
               <p className="mt-2 text-xs md:text-lg font-medium">{item.name}</p>
             </div>
           ))}
         </div>
       </div>
-    </Section>
+    </div>
   );
 };
 

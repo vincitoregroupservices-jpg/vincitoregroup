@@ -21,6 +21,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Material Symbols Icon Font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${BricolageGrotesque.className} bg-background`}>
         <Navbar />
         {children}
