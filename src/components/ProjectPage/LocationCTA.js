@@ -15,7 +15,7 @@ const LocationCTA = ({ project }) => {
       }}
     >
       <div className="absolute inset-0 bg-black opacity-80"></div>
-      <section>
+      <section className="flex flex-col items-center justify-center">
         <Image
           src={"/icons/location3.svg"}
           height={500}
@@ -23,7 +23,7 @@ const LocationCTA = ({ project }) => {
           className="h-10 w-auto  z-1"
           alt="Location Icon"
         />
-        <h1 className="text-2xl md:text-3xl z-1 text-white md:max-w-[60%]">
+        <h1 className="text-2xl md:text-3xl text-white md:max-w-[60%]">
           {project.location}
         </h1>
         <Link href={project.locationLink} target="_blank">
