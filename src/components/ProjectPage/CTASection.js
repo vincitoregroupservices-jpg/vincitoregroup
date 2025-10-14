@@ -30,7 +30,7 @@ const CTASection = ({ project }) => {
         <h1 className="text-3xl md:text-5xl font-semibold max-w-3xl">
           {project.tagline.quate}
         </h1>
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center items-center gap-3">
           <Link href={`/contact`}>
             <Button text="Get in Touch" outline noArrow />
           </Link>
