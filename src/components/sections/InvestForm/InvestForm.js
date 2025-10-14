@@ -1,5 +1,4 @@
 "use client";
-
 import Button from "@/components/ui/Button/Button";
 import Section from "@/components/ui/Section/Section";
 import SectionTitle from "@/components/ui/SectionTitle/SectionTitle";
@@ -9,8 +8,9 @@ import {
   SelectItem,
   SelectTrigger,
 } from "@/components/ui/select";
+import gsap from "gsap";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -67,7 +67,7 @@ const InvestForm = () => {
   };
 
   return (
-    <Section className="">
+    <section className="flex flex-col gap-5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 form-gsap">
       <SectionTitle text="Enquiry for Investors" />
       <div className="flex flex-row justify-center mb-20 gap-5">
         <Image
@@ -133,7 +133,7 @@ const InvestForm = () => {
 
           <div className="flex flex-col items-start mt-2">
             <Button
-            type='submit'
+              type="submit"
               text="Submit"
               className="w-[140px] text-sm py-3 mb-2"
               loading={isLoading}
@@ -146,7 +146,7 @@ const InvestForm = () => {
       </div>
 
       <ToastContainer position="bottom-right" autoClose={3000} />
-    </Section>
+    </section>
   );
 };
 
