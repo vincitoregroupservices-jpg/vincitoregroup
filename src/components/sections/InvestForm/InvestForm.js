@@ -67,7 +67,7 @@ const InvestForm = () => {
   };
 
   return (
-    <section className="flex flex-col gap-5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 form-gsap">
+    <Section className="flex flex-col gap-5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 form-gsap">
       <SectionTitle text="Enquiry for Investors" />
       <div className="flex flex-row justify-center mb-20 gap-5">
         <Image
@@ -146,7 +146,7 @@ const InvestForm = () => {
       </div>
 
       <ToastContainer position="bottom-right" autoClose={3000} />
-    </section>
+    </Section>
   );
 };
 
