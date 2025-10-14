@@ -133,6 +133,7 @@ const InvestForm = () => {
 
           <div className="flex flex-col items-start mt-2">
             <Button
+            type='submit'
               text="Submit"
               className="w-[140px] text-sm py-3 mb-2"
               loading={isLoading}

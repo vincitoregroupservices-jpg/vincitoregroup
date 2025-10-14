@@ -34,13 +34,13 @@ export default function ProjectPage({ params }) {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [formData, setFormData] = useState({ name: "", mobile: "" });
   const [isLoading, setIsLoading] = useState(false);
-  useEffect(() => {
-    gsap.from("#bottom-gsap", {
-      opacity: 0,
-      y: 20,
-      duration: 1,
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.from("#bottom-gsap", {
+  //     opacity: 0,
+  //     y: 20,
+  //     duration: 1,
+  //   });
+  // }, []);
   if (!project) return notFound();
 
   const handleChange = (e) => {
