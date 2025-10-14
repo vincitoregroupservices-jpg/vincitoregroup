@@ -6,13 +6,13 @@ import Section from "../ui/Section/Section";
 export default function HeroSection({ project }) {
   return (
     <>
-      <section
+      <Section
         className="relative h-[80vh] md:h-[80vh] flex items-center justify-center bg-cover bg-center pt-20"
-        style={{ backgroundImage: `url(${project.thumbnail})`}}
+        style={{ backgroundImage: `url(${project.thumbnail})` }}
       >
         {/* Overlay */}
         <div className="w-full absolute inset-0 bg-black opacity-75"></div>
-    
+
         {/* Content */}
         <div className="relative z-10 flex-col flex md:flex-row md:justify-center md:items-center gap-5 md:gap-10 px-10">
           <div className="flex flex-col gap-3">
@@ -43,7 +43,10 @@ export default function HeroSection({ project }) {
           <span className="md:h-[100px] md:w-[1px] h-[1px] w-[100px] bg-gold-lighter" />
           <div className="flex flex-col gap-3">
             {project.typeSummary.map((ele, index) => (
-              <h3 key={index} className="text-white text-xl md:text-2xl text-left">
+              <h3
+                key={index}
+                className="text-white text-xl md:text-2xl text-left"
+              >
                 {ele}
               </h3>
             ))}
@@ -52,7 +55,7 @@ export default function HeroSection({ project }) {
             </Link>
           </div>
         </div>
-      </section>
+      </Section>
       <Section className="gap-3 items-center justify-center mt-15">
         <h1 className="text-4xl w-[80vw] md:w-[30vw] text-center">
           {project.tagline.heading}
