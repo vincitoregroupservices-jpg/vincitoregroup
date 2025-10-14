@@ -10,6 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../ui/dialog";
+import Image from "next/image";
 
 const CTASection = ({ project }) => {
   return (
