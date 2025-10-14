@@ -2,6 +2,14 @@ import React from "react";
 import Section from "../ui/Section/Section";
 import Button from "../ui/Button/Button";
 import Link from "next/link";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
 
 const CTASection = ({ project }) => {
   return (
@@ -25,9 +33,43 @@ const CTASection = ({ project }) => {
           <Link href={`/contact`}>
             <Button text="Get in Touch" outline noArrow />
           </Link>
-          <Link href={`tel:${project.contact[0]}`}>
-            <Button text="Enquire Now" />
-          </Link>
+          {project.contact.length > 1 ? (
+            <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+              <DialogTrigger>
+                <Button text={"Enquire Now"} />
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[425px] bg-background">
+                <DialogHeader>
+                  <DialogTitle>Enquire Now</DialogTitle>
+                  <DialogDescription className="mb-4 text-muted-foreground">
+                    Select a contact number below to contact us.
+                  </DialogDescription>
+                  {project.contact.map((ele, index) => (
+                    <Link
+                      href={`tel:${ele}`}
+                      className="text-xl underline cursor-pointer flex gap-3 items-center"
+                      key={index}
+                      onClick={() => {
+                        setDialogOpen(false);
+                      }}
+                    >
+                      <Image
+                        src={"/icons/Call.svg"}
+                        height={300}
+                        width={300}
+                        className="h-4 w-auto"
+                      />
+                      {ele}
+                    </Link>
+                  ))}
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+          ) : (
+            <Link href={`tel:${project.contact[0]}`}>
+              <Button className={"mt-3"} text="Enquire Now" />
+            </Link>
+          )}
         </div>
       </div>
     </div>
