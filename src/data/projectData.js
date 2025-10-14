@@ -174,7 +174,7 @@ const projectData = [
   {
     slug: "vincitore-vintage",
     name: "Vincitore Vintage",
-    thumbnail: "/projects/vincitore-vintage/VincitoreVintage-2.jpg",
+    thumbnail: "/projects/vincitore-vintage/VincitoreVintage-1.jpg",
     contact: ["+919726654949"],
     status: "Under Construction",
     interest: ["Buy", "Invest", "Lease"],
