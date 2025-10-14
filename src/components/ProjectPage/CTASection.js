@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Section from "../ui/Section/Section";
 import Button from "../ui/Button/Button";
 import Link from "next/link";
@@ -13,6 +14,8 @@ import {
 import Image from "next/image";
 
 const CTASection = ({ project }) => {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
   return (
     <div
       className="relative flex flex-col items-center justify-center text-center py-20"

@@ -47,7 +47,7 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-[60vh] md:h-[100vh] flex items-center justify-center text-center mb-15 gap-14 pt-20 overflow-hidden rounded-b-4xl"
+      className="relative w-full h-[60vh] md:h-[100vh] flex items-center justify-center text-center mb-15 gap-14 pt-20 overflow-hidden"
     >
       {/* Background Video or Image */}
       {video ? (

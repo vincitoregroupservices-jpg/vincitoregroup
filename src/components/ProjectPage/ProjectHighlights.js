@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Button from "../ui/Button/Button";
 import Section from "../ui/Section/Section";
@@ -13,6 +14,8 @@ import {
 import Image from "next/image";
 
 export default function ProjectHighlights({ project }) {
+  const [dialogOpen, setDialogOpen] = useState(false);
+
   return (
     <Section>
       <SectionTitle text={`${project.name} - Project Highlights`} />
