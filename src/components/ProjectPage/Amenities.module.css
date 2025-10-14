@@ -1,0 +1,81 @@
+.amenitiesCarousel {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: max-content;
+  grid-template-rows: repeat(2, auto);
+  gap: 2.3em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5em;
+
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.amenitiesCarousel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.amenityCard {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 120px; /* Adjust card width */
+  gap: 0.5em;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .amenityCard {
+    width: 80px;
+  }
+}
+
+/* Navigation Arrows */
+.amenitiesScrollBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--gold);
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: bold;
+  color: var(--color-black-3);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.amenitiesScrollBtn:hover {
+  background: var(--gold-light);
+}
+
+.leftAmenities {
+  left: 1rem;
+}
+
+.rightAmenities {
+  right: 1rem;
+}
+
+@media (max-width: 750px) {
+  .amenitiesCarousel {
+    gap: 0.9em;
+  }
+
+  .amenitiesScrollBtn {
+    display: none;
+  }
+}
