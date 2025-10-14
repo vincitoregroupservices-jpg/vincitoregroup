@@ -12,6 +12,7 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ProjectHighlights({ project }) {
   const [dialogOpen, setDialogOpen] = useState(false);
