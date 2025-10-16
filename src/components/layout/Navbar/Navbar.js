@@ -124,12 +124,13 @@ const Navbar = () => {
       <div className="md:w-[20%] flex items-center justify-center cursor-pointer">
         <Link href={"/"}>
           <Image
-            src="/vincitore-golden.svg"
+            src="/vincitore-logo.png"
             alt="Vincitore Logo"
             width={3000}
             height={3000}
             className={styles.logo}
             priority
+            quality={100}
           />
         </Link>
       </div>

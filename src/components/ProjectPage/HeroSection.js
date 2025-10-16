@@ -71,6 +71,34 @@ export default function HeroSection({ project }) {
       >
         {/* Overlay */}
         <div className="w-full absolute inset-0 bg-black opacity-75"></div>
+        <div className="absolute bottom-5 right-5">
+          <Button
+            text="Share"
+            onClick={async () => {
+              const shareData = {
+                title: project.name,
+                text: "Check out this project!",
+                url: window.location.href,
+              };
+
+              if (navigator.share) {
+                try {
+                  await navigator.share(shareData);
+                } catch (err) {
+                  console.error("Error sharing:", err);
+                }
+              } else {
+                // Fallback for desktop
+                try {
+                  await navigator.clipboard.writeText(shareData.url);
+                  alert("URL copied to clipboard!");
+                } catch (err) {
+                  console.error("Failed to copy URL:", err);
+                }
+              }
+            }}
+          />
+        </div>
 
         {/* Content */}
         <div className="relative z-10 flex-col flex md:flex-row md:justify-center md:items-center gap-5 md:gap-10 px-10">
