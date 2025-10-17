@@ -9,12 +9,6 @@ import Line from "@/components/ui/Line/Line";
 import Map from "@/components/ui/Maps/Maps";
 
 export default function Home() {
-    const locations = [
-    { lat: 23.0225, lng: 72.5714 }, // Ahmedabad
-    { lat: 19.076, lng: 72.8777 },  // Mumbai
-    { lat: 28.6139, lng: 77.209 },  // Delhi
-  ];
-
   return (
     <main>
       <HeroSection
@@ -27,7 +21,7 @@ export default function Home() {
         btnHref="/projects"
         video="https://res.cloudinary.com/dwriqxcdz/video/upload//q_auto,f_auto/v1760423832/landingVideo_cyi9aq.mp4"
       />
-      <Stats1 /> <Map locations={locations} />
+      <Stats1 />
       <Line />
       <OurSignatureDevelopments />
       <Line />
