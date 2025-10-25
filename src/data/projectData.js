@@ -22,6 +22,7 @@ const projectData = [
     locationLink: "https://maps.app.goo.gl/ekFyVrkHgf4SyHPRA",
     locationEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.7623603978586!2d72.67779847477154!3d23.06917231458857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87ff196f3299%3A0x2d473d0c76111f6e!2sVincitore%20Sky!5e0!3m2!1sen!2sin!4v1756989179642!5m2!1sen!2sin",
+    coordinates: { lat: 23.06939936542341, lng: 72.68045923068573 },
     locationAdvantages: [
       "Prime 100 Ft. Road connectivity",
       "Renowned schools within 300m",
@@ -93,7 +94,10 @@ const projectData = [
       { src: "/projects/vincitore-sky/VincitoreSky-11.jpeg" },
       { src: "/projects/vincitore-sky/VincitoreSky-12.jpeg" },
     ],
-    video: ["https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy", "https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy"],
+    video: [
+      "https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy",
+      "https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy",
+    ],
     brochure: "/projects/vincitore-sky/VincitoreSky.pdf",
   },
   {
@@ -120,6 +124,7 @@ const projectData = [
     locationLink: "https://maps.app.goo.gl/9PCvNtyzfQuif6MG9",
     locationEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6419037027886!2d72.67462487476955!3d23.00019201716402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e876b4bf0be81%3A0x1cd51dd7e37f1327!2sVincitore%20Rivera!5e0!3m2!1sen!2sin!4v1756989250522!5m2!1sen!2sin",
+    coordinates: { lat: 23.00041918419738, lng: 72.67712469815 },
     locationAdvantages: [
       "2 Road Corner Scheme (100 Ft & 40 Ft Road)",
       "Farm within 200m",
@@ -226,6 +231,7 @@ const projectData = [
     locationLink: "https://maps.app.goo.gl/AP4cUtX9sa1JUV9W6",
     locationEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5058340421765!2d72.67436847455457!3d23.005192416977938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87005a58ecaf%3A0x7e17fdc999498e56!2sVINCITORE%20VINTAGE!5e0!3m2!1sen!2sin!4v1760081078438!5m2!1sen!2sin",
+    coordinates: { lat: 23.00565658856422, lng: 72.67699704417858 },
     locationAdvantages: [
       "2 Road Corner Scheme (60 Ft & 60 Ft Road)",
       "Opposite to Farm",
@@ -325,6 +331,7 @@ const projectData = [
     locationLink: "https://maps.app.goo.gl/PsCFWWybsjrwbeUZ7",
     locationEmbed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.955114406502!2d72.65262007476815!3d22.951880118963594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8994846ff58d%3A0xe7e533566f40094b!2sVincitore%20Valley!5e0!3m2!1sen!2sin!4v1756989536190!5m2!1sen!2sin",
+    coordinates: { lat: 22.95260114576317, lng: 72.65499539999999 },
     locationAdvantages: [
       "2 Road Corner Scheme (80 Ft & 60 Ft Road)",
       "Next to Farm",
@@ -463,6 +470,7 @@ const projectData = [
     locationLink: "https://maps.app.goo.gl/9sbzBtmpa9cRDjkm8",
     locationEmbed:
       "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3674.271607983475!2d72.6283333!3d22.940222199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDU2JzI0LjgiTiA3MsKwMzcnNDIuMCJF!5e0!3m2!1sen!2sin!4v1756989650186!5m2!1sen!2sin",
+    coordinates: { lat: 22.940488768209775, lng: 72.62829008465714 },
     locationAdvantages: [
       "2 Road Corner Scheme (100 Ft & 40 Ft Road)",
       "School within 100m",
@@ -555,6 +563,7 @@ const projectData = [
     locationLink: "https://maps.app.goo.gl/ANkEcXQsUoFsrTAK6",
     locationEmbed:
       "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3669.5555287026546!2d72.72963890000001!3d23.1133611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDA2JzQ4LjEiTiA3MsKwNDMnNDYuNyJF!5e0!3m2!1sen!2sin!4v1756989618720!5m2!1sen!2sin",
+    coordinates: { lat: 23.1138298675979, lng: 72.72960872752853 },
     locationAdvantages: [
       "2 Road Corner Scheme",
       "Just 50m from Narmada River",

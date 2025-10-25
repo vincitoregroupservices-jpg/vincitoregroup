@@ -2,6 +2,7 @@ import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer/Footer";
 import Navbar from "@/components/layout/Navbar/Navbar";
+import 'leaflet/dist/leaflet.css';
 
 const BricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
