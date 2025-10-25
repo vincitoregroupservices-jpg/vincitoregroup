@@ -128,6 +128,7 @@ const LocationSection = ({ title, CTABtn }) => {
         <div className="w-full md:w-1/2 h-[500px] flex border border-gold-dark rounded-lg flex-col">
           {!showIframe ? (
             <MapContainer
+            className="z-1"
               ref={mapRef}
               center={[centerLat, centerLng]}
               zoom={10}
