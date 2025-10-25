@@ -72,32 +72,38 @@ export default function HeroSection({ project }) {
         {/* Overlay */}
         <div className="w-full absolute inset-0 bg-black opacity-75"></div>
         <div className="absolute bottom-5 right-5">
-          <Button
-            text="Share"
+          <div
             onClick={async () => {
               const shareData = {
-                title: project.name,
-                text: "Check out this project!",
-                url: window.location.href,
+                title: project.name || "Check out this project!",
+                text:
+                  project.tagline?.description ||
+                  "Take a look at this amazing project!",
+                url: typeof window !== "undefined" ? window.location.href : "",
               };
 
+              // ✅ Check if Web Share API is supported
               if (navigator.share) {
                 try {
                   await navigator.share(shareData);
+                  console.log("✅ Shared successfully!");
                 } catch (err) {
-                  console.error("Error sharing:", err);
+                  console.error("❌ Error sharing:", err);
                 }
               } else {
-                // Fallback for desktop
+                // ✅ Fallback for desktop browsers
                 try {
                   await navigator.clipboard.writeText(shareData.url);
-                  alert("URL copied to clipboard!");
+                  alert("📋 Link copied to clipboard!");
                 } catch (err) {
-                  console.error("Failed to copy URL:", err);
+                  console.error("❌ Failed to copy URL:", err);
+                  alert("Something went wrong while copying the link.");
                 }
               }
             }}
-          />
+          >
+            <Button text="Share" />
+          </div>
         </div>
 
         {/* Content */}
