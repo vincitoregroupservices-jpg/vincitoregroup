@@ -107,7 +107,7 @@ const Page = () => {
 
       {/* Search + Filters */}
       <Section className="px-2 sm:px-6 md:px-14 lg:px-20 xl:px-24 -mt-5">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-5">
           {/* Search bar */}
           <div className="relative w-full">
             <Image
