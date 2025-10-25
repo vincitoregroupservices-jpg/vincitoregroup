@@ -243,7 +243,7 @@ const Page = () => {
                 </SelectItem>
                 <SelectItem
                   className="focus:bg-gold-light"
-                  value="Newly Launch"
+                  value="Comming Soon"
                 >
                   Newly Launch
                 </SelectItem>
