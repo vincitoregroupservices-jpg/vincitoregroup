@@ -96,7 +96,7 @@ const LocationSection = ({ title, CTABtn }) => {
       <SectionTitle text={title} />
       <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
         {/* Left side: Locations list */}
-        <div className="flex flex-col gap-4 w-full md:w-1/2 h-[500px] overflow-y-auto pr-2 snap-y snap-mandatory">
+        <div className="flex flex-col gap-4 w-full md:w-1/2 h-[500px] overflow-y-auto pr-2 snap-y snap-mandatory relative">
           {projectData.map((loc, index) => (
             <div
               key={index}
@@ -118,6 +118,17 @@ const LocationSection = ({ title, CTABtn }) => {
               </div>
             </div>
           ))}
+          <div className="sticky bottom-2 left-1/2 transform z-10 flex justify-center">
+            <div className="p-2 rotate-90 rounded-full bg-gold-light flex items-center justify-center shadow-md">
+              <Image
+                src="/icons/arrow.svg"
+                width={24}
+                height={24}
+                alt="Scroll down"
+                className="h-6 w-auto transition-transform duration-300 hover:translate-x-1 text-gold"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Right side: Map or iframe */}
