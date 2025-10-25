@@ -93,7 +93,7 @@ const projectData = [
       { src: "/projects/vincitore-sky/VincitoreSky-11.jpeg" },
       { src: "/projects/vincitore-sky/VincitoreSky-12.jpeg" },
     ],
-    video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
+    video: ["https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy", "https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy"],
     brochure: "/projects/vincitore-sky/VincitoreSky.pdf",
   },
   {
@@ -199,7 +199,7 @@ const projectData = [
       { src: "/projects/vincitore-rivera/VincitoreRivera-14.jpeg" },
       { src: "/projects/vincitore-rivera/VincitoreRivera-15.jpeg" },
     ],
-    video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
+    video: ["https://www.youtube.com/embed/FtXlpgJbnvA?si=jQ8f-A1m0-UBC0xf"],
     brochure: "/projects/vincitore-rivera/VincitoreRivera.pdf",
   },
   {
@@ -299,7 +299,6 @@ const projectData = [
       { src: "/projects/vincitore-vintage/VincitoreVintage-13.jpg" },
       { src: "/projects/vincitore-vintage/VincitoreVintage-14.jpg" },
     ],
-    video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
     brochure: "/projects/vincitore-vintage/VincitoreVintage.pdf",
   },
   {
@@ -438,7 +437,7 @@ const projectData = [
       { src: "/projects/vincitore-valley/VincitoreValley-22.jpg" },
       { src: "/projects/vincitore-valley/VincitoreValley-23.jpg" },
     ],
-    video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
+    video: ["https://www.youtube.com/embed/tTv0VIgYfeY?si=JZkB7kHyAbBFs2my"],
     brochure: "/projects/vincitore-valley/VincitoreValley.pdf",
   },
   {
@@ -530,7 +529,6 @@ const projectData = [
       { src: "/projects/the-7-vincitore/The7Vincitore-7.jpeg" },
       { src: "/projects/the-7-vincitore/The7Vincitore-8.jpeg" },
     ],
-    video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
     brochure: "/projects/the-7-vincitore/The7Vincitore.pdf",
   },
   {
@@ -603,7 +601,6 @@ const projectData = [
       { src: "/projects/shivalay-bunglols/ShivalayBunglols-4.jpg" },
       { src: "/projects/shivalay-bunglols/ShivalayBunglols-5.jpg" },
     ],
-    video: "https://www.youtube.com/embed/G_oWhiWO7SQ?si=06qFaHE-vwwQF2u9",
     brochure: "/projects/shivalay-bunglols/ShivalayBunglols.pdf",
   },
 ];
