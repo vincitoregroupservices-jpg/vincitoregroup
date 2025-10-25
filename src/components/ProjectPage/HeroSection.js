@@ -24,44 +24,75 @@ export default function HeroSection({ project }) {
   const contactRef = useRef(null);
 
   useEffect(() => {
-    // Heading animation
-    gsap.from(headingRef.current, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
-
-    // Location/status fade
-    gsap.from(locationRef.current, {
-      y: 20,
-      opacity: 0,
-      duration: 1,
-      delay: 0.3,
-      ease: "power3.out",
-    });
-
-    // Interest tags stagger
-    gsap.from(tagsRef.current, {
-      y: 20,
-      opacity: 0,
-      stagger: 0.2,
-      delay: 0.5,
-      duration: 0.8,
-      ease: "power3.out",
-    });
-
-    // Contact section slide in
-    if (contactRef.current) {
-      gsap.from(contactRef.current, {
-        x: 50,
+    // Ensure this runs only on client side
+    if (typeof window !== "undefined") {
+      // Heading animation
+      gsap.from(headingRef.current, {
+        y: 50,
         opacity: 0,
         duration: 1,
-        delay: 0.7,
         ease: "power3.out",
       });
+
+      // Location/status fade
+      gsap.from(locationRef.current, {
+        y: 20,
+        opacity: 0,
+        duration: 1,
+        delay: 0.3,
+        ease: "power3.out",
+      });
+
+      // Interest tags stagger
+      gsap.from(tagsRef.current, {
+        y: 20,
+        opacity: 0,
+        stagger: 0.2,
+        delay: 0.5,
+        duration: 0.8,
+        ease: "power3.out",
+      });
+
+      // Contact section slide in
+      if (contactRef.current) {
+        gsap.from(contactRef.current, {
+          x: 50,
+          opacity: 0,
+          duration: 1,
+          delay: 0.7,
+          ease: "power3.out",
+        });
+      }
     }
   }, []);
+
+  const handleShare = () => {
+    // Ensure this runs only on client side
+    if (typeof window !== "undefined") {
+      const shareData = {
+        title: project.name || "Check out this project!",
+        text:
+          project.tagline?.description ||
+          "Take a look at this amazing project!",
+        url: window.location.href,
+      };
+
+      // ✅ Check if Web Share API is supported
+      if (navigator.share) {
+        navigator.share(shareData)
+          .then(() => console.log("✅ Shared successfully!"))
+          .catch((err) => console.error("❌ Error sharing:", err));
+      } else {
+        // ✅ Fallback for desktop browsers
+        navigator.clipboard.writeText(shareData.url)
+          .then(() => alert("📋 Link copied to clipboard!"))
+          .catch((err) => {
+            console.error("❌ Failed to copy URL:", err);
+            alert("Something went wrong while copying the link.");
+          });
+      }
+    }
+  };
 
   return (
     <>
@@ -72,36 +103,7 @@ export default function HeroSection({ project }) {
         {/* Overlay */}
         <div className="w-full absolute inset-0 bg-black opacity-75"></div>
         <div className="absolute bottom-5 right-5">
-          <div
-            onClick={async () => {
-              const shareData = {
-                title: project.name || "Check out this project!",
-                text:
-                  project.tagline?.description ||
-                  "Take a look at this amazing project!",
-                url: typeof window !== "undefined" ? window.location.href : "",
-              };
-
-              // ✅ Check if Web Share API is supported
-              if (navigator.share) {
-                try {
-                  await navigator.share(shareData);
-                  console.log("✅ Shared successfully!");
-                } catch (err) {
-                  console.error("❌ Error sharing:", err);
-                }
-              } else {
-                // ✅ Fallback for desktop browsers
-                try {
-                  await navigator.clipboard.writeText(shareData.url);
-                  alert("📋 Link copied to clipboard!");
-                } catch (err) {
-                  console.error("❌ Failed to copy URL:", err);
-                  alert("Something went wrong while copying the link.");
-                }
-              }
-            }}
-          >
+          <div onClick={handleShare}>
             <Button text="Share" />
           </div>
         </div>
