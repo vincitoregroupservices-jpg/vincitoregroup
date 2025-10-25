@@ -53,15 +53,13 @@ const LocationSection = ({ title, CTABtn }) => {
     }
   };
 
-  // Effect to set custom bounds based on top and bottom coordinates
+  // Effect to set custom bounds based on top and bottom coordinates (client-side only)
   useEffect(() => {
-    if (mapRef.current) {
+    if (typeof window !== "undefined" && mapRef.current) {
       // Define custom bounds using top and bottom latitudes and longitude range
       const lngRange = L.latLngBounds(
         projectData.map((site) => [site.coordinates.lat, site.coordinates.lng])
-      ).getWest() < L.latLngBounds(
-        projectData.map((site) => [site.coordinates.lat, site.coordinates.lng])
-      ).getEast()
+      ).isValid()
         ? [
             L.latLngBounds(
               projectData.map((site) => [site.coordinates.lat, site.coordinates.lng])
@@ -143,7 +141,7 @@ const LocationSection = ({ title, CTABtn }) => {
           <div className="w-full md:w-1/2 h-[500px] flex border border-gold-dark rounded-lg flex-col">
             {!showIframe ? (
               <MapContainer
-              className="z-0"
+              className="z-1"
                 ref={mapRef}
                 center={[centerLat, centerLng]}
                 zoom={10} // Default zoomed-out view
@@ -155,6 +153,7 @@ const LocationSection = ({ title, CTABtn }) => {
                 />
                 {projectData.map((site, index) => (
                   <Marker
+                  className='z-0'
                     key={index}
                     position={[site.coordinates.lat, site.coordinates.lng]}
                     icon={redIcon} // Use custom red marker
