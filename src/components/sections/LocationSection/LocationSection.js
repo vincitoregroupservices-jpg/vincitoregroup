@@ -23,10 +23,9 @@ const Marker = dynamic(
   () => import("react-leaflet").then((mod) => mod.Marker),
   { ssr: false }
 );
-const Popup = dynamic(
-  () => import("react-leaflet").then((mod) => mod.Popup),
-  { ssr: false }
-);
+const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
+  ssr: false,
+});
 
 const LocationSection = ({ title, CTABtn }) => {
   const [currentLocation, setCurrentLocation] = useState("");
@@ -47,8 +46,7 @@ const LocationSection = ({ title, CTABtn }) => {
       LInstance.Icon.Default.mergeOptions({
         iconRetinaUrl:
           "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-        iconUrl:
-          "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+        iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
         shadowUrl:
           "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
       });
@@ -78,9 +76,7 @@ const LocationSection = ({ title, CTABtn }) => {
     return (
       <Section>
         <SectionTitle text={title} />
-        <p className="text-center text-gray-600 py-10">
-          Loading map...
-        </p>
+        <p className="text-center text-gray-600 py-10">Loading map...</p>
       </Section>
     );
   }
@@ -128,7 +124,7 @@ const LocationSection = ({ title, CTABtn }) => {
         <div className="w-full md:w-1/2 h-[500px] flex border border-gold-dark rounded-lg flex-col">
           {!showIframe ? (
             <MapContainer
-            className="z-1"
+              className="z-1"
               ref={mapRef}
               center={[centerLat, centerLng]}
               zoom={10}
@@ -144,14 +140,13 @@ const LocationSection = ({ title, CTABtn }) => {
                   position={[site.coordinates.lat, site.coordinates.lng]}
                   icon={redIcon}
                 >
-                  <Popup>
+                  <Popup className="bg-gold-lighter">
                     <h3 className="font-semibold">{site.name}</h3>
-                    <button
-                      className="mt-2 px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
-                      onClick={() => handleLocationClick(site.locationEmbed)}
-                    >
-                      Get Location
-                    </button>
+                    <Link href={site.locationLink} target="_blank">
+                      <button className="mt-2 px-2 py-1 bg-gold-dark text-white rounded">
+                        Get Location
+                      </button>
+                    </Link>
                   </Popup>
                 </Marker>
               ))}
