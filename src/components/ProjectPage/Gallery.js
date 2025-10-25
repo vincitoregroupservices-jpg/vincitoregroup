@@ -11,7 +11,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import { HeroVideoDialog } from "../ui/hero-video-dialog";
 import { Skeleton } from "../ui/skeleton";
 
 const Gallery = ({ project }) => {
@@ -25,6 +24,8 @@ const Gallery = ({ project }) => {
   return (
     <Section className="items-center">
       <SectionTitle text="Your Dream Home in Pictures" />
+      
+      {/* Tabs Switch */}
       <div className="bg-gold-light relative rounded-full flex text-center text-xl font-medium cursor-pointer w-full md:w-[600px]">
         <h1
           onClick={() => setCurrent(0)}
@@ -46,6 +47,7 @@ const Gallery = ({ project }) => {
         />
       </div>
 
+      {/* Photos Section */}
       {current === 0 ? (
         <Carousel className="w-full flex flex-col md:block">
           <CarouselContent
@@ -88,14 +90,17 @@ const Gallery = ({ project }) => {
           </div>
         </Carousel>
       ) : (
-        <div className="rounded-lg overflow-hidden">
-          <div className="w-[60%] h-[200px] m-auto">
-            <HeroVideoDialog
-              animationStyle="top-in-bottom-out"
-              videoSrc={project.video}
-              thumbnailSrc={project.thumbnail}
-              thumbnailAlt={`${project.name} Video`}
-            />
+        /* 🎥 Iframe Video Section */
+        <div className="rounded-lg overflow-hidden w-full flex justify-center mt-5">
+          <div className="w-[90%] md:w-[60%] aspect-video">
+            <iframe
+              src={project.video}
+              title={`${project.name} Video`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-lg"
+            ></iframe>
           </div>
         </div>
       )}
