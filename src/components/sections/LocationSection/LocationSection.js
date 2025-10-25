@@ -23,7 +23,7 @@ const redIcon = new L.Icon({
 
 const LocationSection = ({ title, CTABtn }) => {
   const [currentLocation, setCurrentLocation] = useState("");
-  const [showIframe, setShowIframe] = useState(false); // State to toggle between maps
+  const [showIframe, setShowIframe] = useState(false);
   const mapRef = useRef(null);
 
   // Fix for default marker icon issue in Next.js
@@ -37,26 +37,22 @@ const LocationSection = ({ title, CTABtn }) => {
 
   const containerStyle = {
     width: "100%",
-    height: "600px", // Match the parent div height
+    height: "600px",
   };
 
-  // Custom top and bottom coordinates (replace with your values)
-  const topLat = 23.1; // Northernmost latitude (e.g., max latitude of your sites)
-  const bottomLat = 22.9; // Southernmost latitude (e.g., min latitude of your sites)
-  const centerLat = (topLat + bottomLat) / 2; // Calculate center latitude
-  const centerLng = 72.67712469815; // Default longitude (adjust based on your data)
+  const topLat = 23.1;
+  const bottomLat = 22.9;
+  const centerLat = (topLat + bottomLat) / 2;
+  const centerLng = 72.67712469815;
 
-  // Function to center map on a specific location
   const handleGetLocation = (lat, lng) => {
     if (mapRef.current) {
-      mapRef.current.setView([lat, lng], 14); // Zoom level 14 for detail
+      mapRef.current.setView([lat, lng], 14);
     }
   };
 
-  // Effect to set custom bounds based on top and bottom coordinates (client-side only)
   useEffect(() => {
     if (typeof window !== "undefined" && mapRef.current) {
-      // Define custom bounds using top and bottom latitudes and longitude range
       const lngRange = L.latLngBounds(
         projectData.map((site) => [site.coordinates.lat, site.coordinates.lng])
       ).isValid()
@@ -68,20 +64,18 @@ const LocationSection = ({ title, CTABtn }) => {
               projectData.map((site) => [site.coordinates.lat, site.coordinates.lng])
             ).getEast(),
           ]
-        : [72.6, 72.8]; // Fallback longitude range if data is invalid
+        : [72.6, 72.8];
       const customBounds = L.latLngBounds(
-        [bottomLat, lngRange[0]], // Southwest corner
-        [topLat, lngRange[1]] // Northeast corner
+        [bottomLat, lngRange[0]],
+        [topLat, lngRange[1]]
       );
 
-      // Fit map to custom bounds
       mapRef.current.fitBounds(customBounds, {
-        padding: [150, 150], // Increased padding for wider view
-        maxZoom: 10, // Ensure zoomed-out view
-        animate: true, // Smooth transition
+        padding: [150, 150],
+        maxZoom: 10,
+        animate: true,
       });
 
-      // Handle resize to maintain bounds
       const handleResize = () => {
         if (mapRef.current) {
           mapRef.current.fitBounds(customBounds, {
@@ -95,30 +89,24 @@ const LocationSection = ({ title, CTABtn }) => {
     }
   }, []);
 
-  // Handle click on location link to show iframe
   const handleLocationClick = (locationEmbed) => {
     setCurrentLocation(locationEmbed);
-    setShowIframe(true); // Switch to iframe view
+    setShowIframe(true);
   };
 
   return (
     <Section>
       <SectionTitle text={title} />
-
-      {/* Page Container */}
       <div>
         <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
-          {/* Column 1 - Locations */}
           <div
-            className="flex flex-col gap-4 w-full md:w-1/2 h-[500px] overflow-y-auto pr-2 
-                snap-y snap-mandatory"
+            className="flex flex-col gap-4 w-full md:w-1/2 h-[500px] overflow-y-auto pr-2 snap-y snap-mandatory"
           >
             {projectData.map((loc, index) => (
               <div
                 key={index}
                 onClick={() => handleLocationClick(loc.locationEmbed)}
-                className="flex gap-5 bg-gold-lighter p-3.5 rounded-lg cursor-pointer 
-                 snap-start"
+                className="flex gap-5 bg-gold-lighter p-3.5 rounded-lg cursor-pointer snap-start"
               >
                 <Image
                   src={`${loc.thumbnail}`}
@@ -127,7 +115,6 @@ const LocationSection = ({ title, CTABtn }) => {
                   width={2000}
                   className="h-[80px] w-[80px] object-cover rounded-md"
                 />
-
                 <div className="flex flex-col text-black-2">
                   <h3 className="text-xl font-semibold">{loc.name}</h3>
                   <div className="text-sm text-gray-700 leading-snug">
@@ -137,14 +124,13 @@ const LocationSection = ({ title, CTABtn }) => {
               </div>
             ))}
           </div>
-          {/* Column 2 - Map */}
           <div className="w-full md:w-1/2 h-[500px] flex border border-gold-dark rounded-lg flex-col">
             {!showIframe ? (
               <MapContainer
-              className="z-1"
+                className="z-1"
                 ref={mapRef}
                 center={[centerLat, centerLng]}
-                zoom={10} // Default zoomed-out view
+                zoom={10}
                 style={containerStyle}
               >
                 <TileLayer
@@ -153,10 +139,10 @@ const LocationSection = ({ title, CTABtn }) => {
                 />
                 {projectData.map((site, index) => (
                   <Marker
-                  className='z-0'
+                    className="z-0"
                     key={index}
                     position={[site.coordinates.lat, site.coordinates.lng]}
-                    icon={redIcon} // Use custom red marker
+                    icon={redIcon}
                   >
                     <Popup>
                       <div>
@@ -166,7 +152,7 @@ const LocationSection = ({ title, CTABtn }) => {
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => {
-                            e.preventDefault(); // Prevent default link behavior
+                            e.preventDefault();
                             handleLocationClick(site.locationEmbed);
                           }}
                         >
@@ -190,9 +176,8 @@ const LocationSection = ({ title, CTABtn }) => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              />
             )}
-
             <div className="flex sm:hidden flex-wrap justify-center py-5 gap-3">
               {projectData.map((loc, index) => (
                 <div
@@ -207,11 +192,11 @@ const LocationSection = ({ title, CTABtn }) => {
           </div>
         </div>
       </div>
-      {CTABtn ? (
-        <Link href={"/territory"} className="flex justify-center">
+      {CTABtn && (
+        <Link href="/territory" className="flex justify-center">
           <Button text="Explore All Locations" />
         </Link>
-      ) : null}
+      )}
     </Section>
   );
 };

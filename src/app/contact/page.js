@@ -1,11 +1,14 @@
-import ContactForm from "@/components/sections/ContactForm/ContactForm";
-import LocationSection from "@/components/sections/LocationSection/LocationSection";
-import CTASection from "@/components/ui/CTASection/CTASection";
-import DirectContacts from "@/components/ui/DirectContacts/DirectContacts";
-import HeroSection from "@/components/ui/HeroSection/HeroSection";
-import Line from "@/components/ui/Line/Line";
+"use client";
+import dynamic from "next/dynamic";
 
-export default function Home() {
+const HeroSection = dynamic(() => import("@/components/ui/HeroSection/HeroSection"), { ssr: false });
+const ContactForm = dynamic(() => import("@/components/sections/ContactForm/ContactForm"), { ssr: false });
+const Line = dynamic(() => import("@/components/ui/Line/Line"), { ssr: false });
+const DirectContacts = dynamic(() => import("@/components/ui/DirectContacts/DirectContacts"), { ssr: false });
+const LocationSection = dynamic(() => import("@/components/sections/LocationSection/LocationSection"), { ssr: false });
+const CTASection = dynamic(() => import("@/components/ui/CTASection/CTASection"), { ssr: false });
+
+export default function ContactPage() {
   return (
     <main className="mb-20">
       <HeroSection

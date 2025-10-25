@@ -12,36 +12,38 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.5 });
+    if (typeof window !== "undefined") {
+      const tl = gsap.timeline({ delay: 0.5 });
 
-    tl.from(titleRef.current, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power3.out",
-    })
-      .from(
-        descRef.current,
-        {
-          y: 30,
-          opacity: 0,
-          duration: 1,
-          stagger: 0.15,
-          ease: "power3.out",
-        },
-        "-=0.5"
-      )
-      .from(
-        buttonRef.current,
-        {
-          scale: 0.8,
-          opacity: 0,
-          duration: 0.8,
-          ease: "back.out(1.7)",
-        },
-        "-=0.3"
-      );
+      tl.from(titleRef.current, {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
+      })
+        .from(
+          descRef.current,
+          {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power3.out",
+          },
+          "-=0.5"
+        )
+        .from(
+          buttonRef.current,
+          {
+            scale: 0.8,
+            opacity: 0,
+            duration: 0.8,
+            ease: "back.out(1.7)",
+          },
+          "-=0.3"
+        );
+    }
   }, []);
 
   return (
@@ -49,7 +51,6 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
       ref={sectionRef}
       className="relative w-full h-[60vh] md:h-[100vh] flex items-center justify-center text-center mb-15 gap-14 pt-20 overflow-hidden"
     >
-      {/* Background Video or Image */}
       {video ? (
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -65,14 +66,10 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
           height={500}
           width={500}
           className="h-full w-full absolute top-0 left-0 -z-1 object-cover"
+          alt="Background"
         />
       )}
-
-      {/* Overlay */}
-
       <div className="w-full absolute inset-0 bg-black opacity-80"></div>
-
-      {/* Content */}
       <div className="w-[90%] relative z-10 px-5 max-w-3xl flex flex-col gap-6">
         <div>
           <h1 className="text-5xl md:text-7xl font-light text-gold">
@@ -83,8 +80,6 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
             ))}
           </h1>
         </div>
-
-        {/* Subtitle */}
         <div className="text-md md:text-xl text-white max-w-2xl mx-auto">
           {decription.map((text, index) => (
             <div key={index} ref={(el) => (descRef.current[index] = el)}>
@@ -92,8 +87,6 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
             </div>
           ))}
         </div>
-
-        {/* Button */}
         {btnHref && (
           <div className="flex justify-center" ref={buttonRef}>
             <Link href={btnHref}>
