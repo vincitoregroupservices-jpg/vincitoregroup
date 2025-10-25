@@ -96,7 +96,6 @@ const projectData = [
     ],
     video: [
       "https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy",
-      "https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy",
     ],
     brochure: "/projects/vincitore-sky/VincitoreSky.pdf",
   },
