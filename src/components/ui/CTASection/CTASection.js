@@ -8,7 +8,7 @@ const CTASection = ({ title, description, btnText, url }) => {
   return (
     <Section className="flex items-center justify-center flex-col gap-3">
       {/* Top Icons Row */}
-      <div className="w-[90%] flex items-end justify-evenly border-b-2 border-black-2 mb-2">
+      <div className="w-[100%] flex items-end border-b-2 border-black-2 mb-2 gap-10 px-2">
         <div className="w-[40%] flex items-end justify-evenly">
           <Image
             src="/images/Vahical-1.svg"
