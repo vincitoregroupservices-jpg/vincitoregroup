@@ -12,13 +12,29 @@
   padding: 0.5em;
 
   /* Hide scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  /* scrollbar-width: none; Firefox */
+  /* -ms-overflow-style: none; IE/Edge */
 }
 
 .amenitiesCarousel::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  height: 6px;
+  /* visible scrollbar height */
+}
+
+.amenitiesCarousel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* scrollbar track color */
+  border-radius: 10px;
+}
+
+.amenitiesCarousel::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  /* scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.amenitiesCarousel::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-light);
 }
 
 .amenityCard {
@@ -28,7 +44,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  width: 120px; /* Adjust card width */
+  width: 120px;
+  /* Adjust card width */
   gap: 0.5em;
   text-align: center;
 }
