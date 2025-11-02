@@ -27,7 +27,21 @@ const Navbar = () => {
   useEffect(() => {
     const navbar = navRef.current;
     const line = lineRef.current;
-
+    if (window.scrollY > 50) {
+      gsap.to(navbar, {
+        backgroundColor: "var(--black-1)",
+        duration: 0.5,
+        ease: "power2.out",
+      });
+      gsap.to(line, { opacity: 0, duration: 0.5, ease: "power2.out" });
+    } else {
+      gsap.to(navbar, {
+        backgroundColor: "rgba(0,0,0,0)",
+        duration: 0.5,
+        ease: "power2.out",
+      });
+      gsap.to(line, { opacity: 1, duration: 0.5, ease: "power2.out" });
+    }
     const handleScroll = () => {
       if (window.scrollY > 50) {
         gsap.to(navbar, {
@@ -50,14 +64,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-  useEffect(()=>{
-    gsap.from('#nav-gsap', {
+  useEffect(() => {
+    gsap.from("#nav-gsap", {
       opacity: 0,
       y: -10,
-      duration: 1
-    })
-  }, [])
+      duration: 1,
+    });
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -90,7 +103,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      id={'nav-gsap'}
+      id={"nav-gsap"}
       className="w-full fixed top-0 left-0 z-50 flex items-center px-10 py-4 md:px-20 md:py-6 justify-between"
     >
       <span
