@@ -15,9 +15,15 @@ const OurSignatureDevelopments = () => {
 
   // Combine original and duplicated items
   const extendedProjectData = [
-    ...projectData.slice(-duplicateCount), // Clone last items for the start
+    ...projectData.slice(-duplicateCount),
     ...projectData, // Original items
-    ...projectData.slice(0, duplicateCount), // Clone first items for the end
+    ...projectData.slice(0, duplicateCount),
+    ...projectData.slice(-duplicateCount),
+    ...projectData, // Original items
+    ...projectData.slice(0, duplicateCount),
+    ...projectData.slice(-duplicateCount),
+    ...projectData, // Original items
+    ...projectData.slice(0, duplicateCount),
   ];
 
   const scrollLeft = () => {
