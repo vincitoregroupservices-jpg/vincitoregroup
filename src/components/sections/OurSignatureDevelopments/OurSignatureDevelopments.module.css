@@ -9,10 +9,8 @@
   -webkit-overflow-scrolling: touch;
   padding: 0.5em;
   /* Hide scrollbar */
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
 
 .carousel::-webkit-scrollbar {
@@ -44,12 +42,16 @@
   padding: 0.5em;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--color-black-3);
   z-index: 10;
   transition: all 0.3s ease;
   font-family: Consolas;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.6em;
 }
 
 .scrollBtn:hover {
@@ -58,26 +60,18 @@
 
 .left {
   left: 5vw;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .right {
   right: 5vw;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
 
 @media (max-width: 750px) {
   .carousel {
     gap: 0.5em;
   }
 
-  .left {
-    display: none;
-  }
-
+  .left,
   .right {
     display: none;
   }

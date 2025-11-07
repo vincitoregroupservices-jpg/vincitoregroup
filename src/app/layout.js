@@ -33,6 +33,8 @@ export default function RootLayout({ children }) {
       <body className={`${BricolageGrotesque.className} bg-background`}>
         <Navbar />
         {children}
+        <ToastContainer position="bottom-right" autoClose={3000} />
+
         <Footer />
       </body>
     </html>

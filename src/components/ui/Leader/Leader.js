@@ -107,7 +107,7 @@ const Leader = () => {
               </div>
             </div>
           </div>
-          <div className="pt-8 flex flex-col items-start justify-start gap-3">
+          <div className="pt-4 flex flex-col items-start justify-start gap-3">
             <p className="text-black-3 text-md font-normal">
               With over 10 years of experience in the real estate industry, Mr.
               Shailesh Patoliya’s journey is a true testament to determination

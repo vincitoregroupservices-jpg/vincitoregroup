@@ -17,7 +17,7 @@ const projectData = [
         "Premium residences & commercial spaces crafted for those who dream bigger.",
     },
     location:
-      "Vincitore Sky, near Anante Saure Complex, opposite Sarthi Bungalows, Hanspura, Ahmedabad, 382330",
+      "Vincitore Sky, near Anante Saure Complex, opposite Sarthi Bungalow, Hanspura, Ahmedabad, 382330",
     locationSummary: "Hanspura",
     locationLink: "https://maps.app.goo.gl/ekFyVrkHgf4SyHPRA",
     locationEmbed:
@@ -94,9 +94,7 @@ const projectData = [
       { src: "/projects/vincitore-sky/VincitoreSky-11.jpeg" },
       { src: "/projects/vincitore-sky/VincitoreSky-12.jpeg" },
     ],
-    video: [
-      "https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy",
-    ],
+    video: ["https://www.youtube.com/embed/G_oWhiWO7SQ?si=2QKk4s3Dd3RCmhCy"],
     brochure: "/projects/vincitore-sky/VincitoreSky.pdf",
   },
   {
@@ -151,6 +149,12 @@ const projectData = [
       priceFrom: "65* Lakh.",
     },
     amenities: [
+      { label: "Gym", icon: "fitness_center" },
+      { label: "Children Play Area", icon: "child_friendly" },
+      { label: "Personal Foyer", icon: "door_front" },
+      { label: "Largest Common Foyer", icon: "floor" },
+      { label: "Largest Garden", icon: "park" },
+      { label: "Alloted Car Parking with EV Point", icon: "local_parking" },
       { label: "Attractive Entrance Gate", icon: "door_front" },
       { label: "Pick-Up & Drop Point", icon: "directions_car" },
       { label: "Gazebo", icon: "outdoor_grill" },
@@ -158,13 +162,10 @@ const projectData = [
       { label: "CCTV", icon: "videocam" },
       { label: "Fire Safety", icon: "fire_extinguisher" },
       { label: "Common Toilet", icon: "wc" },
-      { label: "Largest Garden", icon: "park" },
       { label: "Generator", icon: "energy" },
       { label: "Water Meter", icon: "gas_meter" },
       { label: "Security Cabin", icon: "security" },
-      { label: "Gym", icon: "fitness_center" },
       { label: "Yoga", icon: "self_improvement" },
-      { label: "Alloted Car Parking with EV Point", icon: "local_parking" },
       { label: "Toddler Play Area", icon: "child_care" },
       { label: "Banquet Hall", icon: "celebration" },
       { label: "Solar System", icon: "solar_power" },
@@ -172,13 +173,10 @@ const projectData = [
       { label: "Adani Gas Pipeline", icon: "gas_meter" },
       { label: "Torrent Power", icon: "flash_on" },
       { label: "Shiv Temple", icon: "temple_buddhist" },
-      { label: "Children Play Area", icon: "child_friendly" },
       { label: "Jogging Track", icon: "directions_run" },
       { label: "Meter Room", icon: "home_repair_service" },
       { label: "Club House", icon: "house" },
       { label: "2 Lift in Each Block", icon: "elevator" },
-      { label: "Largest Common Foyer", icon: "floor" },
-      { label: "Personal Foyer", icon: "door_front" },
     ],
 
     rera: {
@@ -209,8 +207,8 @@ const projectData = [
   {
     slug: "vincitore-vintage",
     name: "Vincitore Vintage",
-    thumbnail: "/projects/vincitore-vintage/VincitoreVintage-1.jpg",
-    thumbnail1: "/projects/vincitore-vintage/VincitoreVintage-3.jpg",
+    thumbnail: "/projects/vincitore-vintage/VincitoreVintage-3.jpg",
+    thumbnail1: "/projects/vincitore-vintage/VincitoreVintage-1.jpg",
     thumbnail2: "/projects/vincitore-vintage/VincitoreVintage-4.jpg",
     contact: ["+919726654949"],
     status: "Under Construction",
@@ -225,7 +223,7 @@ const projectData = [
     },
 
     location:
-      "Vincitore Vintage, Opposite Shyamasi Farm, near Madhav Farm, Vastral, Ahmedabad, 382418",
+      "Vincitore Vintage, Opposite Shyamaji Farm, near Madhav Farm, Vastral, Ahmedabad, 382418",
     locationSummary: "New Vastral",
     locationLink: "https://maps.app.goo.gl/AP4cUtX9sa1JUV9W6",
     locationEmbed:

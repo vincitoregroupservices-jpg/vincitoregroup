@@ -53,7 +53,7 @@ export const projectData = [
     category_title_2: "Shop",
     category_price_2: "60* Lakh",
     category_size_2: "506 to 3255 sq. ft",
-    imageUrl: "/projects/vincitore-vintage/VincitoreVintage-2.jpg",
+    imageUrl: "/projects/vincitore-vintage/VincitoreVintage-3.jpg",
     review: "5",
     status: "Under Construction",
     link: "https://www.google.com/maps/embed?...",

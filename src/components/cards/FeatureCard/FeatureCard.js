@@ -8,8 +8,9 @@ const FeatureCard = ({ title, description, image }) => {
       <Image
         src={image}
         alt={title}
-        fill
-        className="object-cover transition-transform duration-300 group-hover:scale-110"
+        height={200}
+        width={200}
+        className="object-cover h-full w-full transition-transform duration-300 group-hover:scale-110"
       />
 
       {/* Overlay (dark gradient) */}
