@@ -105,7 +105,7 @@ const LocationSection = ({ title, CTABtn }) => {
             >
               <Image
                 src={loc.thumbnail}
-                alt={loc.title}
+                alt={title}
                 height={2000}
                 width={2000}
                 className="h-[80px] w-[80px] object-cover rounded-md"

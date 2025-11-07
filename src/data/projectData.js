@@ -606,6 +606,8 @@ const projectData = [
       { src: "/projects/shivalay-bunglols/ShivalayBunglols-3.jpg" },
       { src: "/projects/shivalay-bunglols/ShivalayBunglols-4.jpg" },
       { src: "/projects/shivalay-bunglols/ShivalayBunglols-5.jpg" },
+      { src: "/projects/shivalay-bunglols/ShivalayBunglols-6.jpg" },
+      { src: "/projects/shivalay-bunglols/ShivalayBunglols-7.jpg" },
     ],
     brochure: "/projects/shivalay-bunglols/ShivalayBunglols.pdf",
   },
