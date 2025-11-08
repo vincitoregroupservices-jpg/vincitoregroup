@@ -27,6 +27,8 @@ import Amenities from "@/components/ProjectPage/Amenities";
 import projectData from "@/data/projectData";
 import gsap from "gsap";
 
+
+
 export default function ProjectPage({ params }) {
   const { slug } = use(params);
   const project = projectData.find((p) => p.slug === slug);
