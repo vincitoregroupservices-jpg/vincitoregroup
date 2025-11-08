@@ -66,7 +66,7 @@ export default function ProjectHighlights({ project }) {
 
       {/* 💼 Card Section */}
       {currentType ? (
-        <div className="p-10 md:min-w-[500px] bg-gold-lighter rounded-xl flex flex-col gap-5 items-center justify-center max-w-3xl mx-auto text-center">
+        <div className="p-10 min-w-full md:min-w-[500px] bg-gold-lighter rounded-xl flex flex-col gap-5 items-center justify-center max-w-3xl mx-auto text-center">
           <div className="flex gap-3 flex-col">
             <h3 className="text-3xl font-semibold">{currentTitle}</h3>
             <span className="bg-gold-dark h-[2px] w-auto mx-20" />
