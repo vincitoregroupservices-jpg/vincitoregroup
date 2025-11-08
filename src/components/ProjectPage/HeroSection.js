@@ -79,12 +79,14 @@ export default function HeroSection({ project }) {
 
       // ✅ Check if Web Share API is supported
       if (navigator.share) {
-        navigator.share(shareData)
+        navigator
+          .share(shareData)
           .then(() => console.log("✅ Shared successfully!"))
           .catch((err) => console.error("❌ Error sharing:", err));
       } else {
         // ✅ Fallback for desktop browsers
-        navigator.clipboard.writeText(shareData.url)
+        navigator.clipboard
+          .writeText(shareData.url)
           .then(() => alert("📋 Link copied to clipboard!"))
           .catch((err) => {
             console.error("❌ Failed to copy URL:", err);
@@ -126,7 +128,7 @@ export default function HeroSection({ project }) {
                 className="h-5 w-auto"
                 alt="Location Icon"
               />{" "}
-              {project.locationSummary} | {project.status}
+              <Link href={project.locationLink} target="_blank">{project.locationSummary}</Link> | {project.status}
             </p>
 
             <p className="flex gap-2">

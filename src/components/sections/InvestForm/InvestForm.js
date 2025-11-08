@@ -69,7 +69,8 @@ const InvestForm = () => {
   return (
     <section className="flex flex-col gap-5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 ">
       <SectionTitle text="Enquiry for Investors" />
-      <div className="flex flex-row justify-center mb-20 gap-5">
+
+      <div className="flex flex-row justify-center gap-5">
         <Image
           height={1000}
           width={1000}

@@ -16,6 +16,7 @@ const ProjectCard = ({
   className,
   status,
   slug,
+  review
 }) => {
   return (
     <div
@@ -69,7 +70,7 @@ const ProjectCard = ({
               <p className="text-xs md:text-right">Google Review</p>
 
               <div className="flex md:justify-end items-center gap-1 text-gold-dark text-md">
-                4.9
+                {review}
                 <Image
                   src={"/icons/review_star_fill.svg"}
                   height={1000}

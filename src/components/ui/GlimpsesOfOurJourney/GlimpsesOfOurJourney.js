@@ -28,7 +28,7 @@ const GlimpsesOfOurJourney = () => {
     ],
   ];
   return (
-    <Section className="flex items-center justify-center">
+    <Section className="flex items-center justify-center mb-10">
       <Image
         src={"/images/Glimpses.png"}
         width={1000}

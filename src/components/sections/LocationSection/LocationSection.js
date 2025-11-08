@@ -140,6 +140,9 @@ const LocationSection = ({ title, CTABtn }) => {
               center={[centerLat, centerLng]}
               zoom={10}
               style={containerStyle}
+              dragging={!L.Browser.mobile} // allow dragging only on non-touch devices
+              tap={false}
+              gestureHandling={true} // enable gesture handling
             >
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

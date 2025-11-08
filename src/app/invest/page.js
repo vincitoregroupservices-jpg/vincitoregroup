@@ -20,9 +20,9 @@ export default function Home() {
       <Line />
       <WhyInvestWithUs />
       <Line />
-      <GlimpsesOfOurJourney />
-      <Line />
       <InvestForm />
+      <Line />
+      <GlimpsesOfOurJourney />
     </main>
   );
 }
