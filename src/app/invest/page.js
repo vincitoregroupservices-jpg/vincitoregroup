@@ -5,7 +5,53 @@ import GlimpsesOfOurJourney from "@/components/ui/GlimpsesOfOurJourney/GlimpsesO
 import HeroSection from "@/components/ui/HeroSection/HeroSection";
 import Line from "@/components/ui/Line/Line";
 
-export default function Home() {
+export const metadata = {
+  title: "Invest with Vincitore Group | Real Estate Investment Opportunities",
+  description:
+    "Explore premium real estate investment opportunities with Vincitore Group. Invest smart and grow with trusted experts in construction, development, and property investment.",
+  keywords: [
+    "Vincitore Group",
+    "Real Estate Investment",
+    "Property Investment",
+    "Invest with Vincitore",
+    "Construction Company",
+    "Luxury Projects",
+    "Ahmedabad Real Estate",
+    "High Return Investments",
+    "Commercial Properties",
+    "Residential Projects",
+  ],
+  openGraph: {
+    title:
+      "Invest with Vincitore Group | Premium Real Estate Investment Opportunities",
+    description:
+      "Grow with Vincitore Group — your trusted partner in real estate investments, luxury construction, and development projects with high ROI potential.",
+    url: "https://www.vincitoregroup.in/invest",
+    siteName: "Vincitore Group",
+    images: [
+      {
+        url: "/images/Invest.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Invest with Vincitore Group - Premium Real Estate Opportunities",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Invest with Vincitore Group | Real Estate Investment Opportunities",
+    description:
+      "Secure your financial growth with Vincitore Group’s exclusive real estate investment projects across India.",
+    images: ["/images/Invest.jpg"],
+  },
+  alternates: {
+    canonical: "https://www.vincitoregroup.in/invest",
+  },
+};
+
+export default function InvestPage() {
   return (
     <main>
       <HeroSection

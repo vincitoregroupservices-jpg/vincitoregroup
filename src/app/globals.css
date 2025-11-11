@@ -209,3 +209,48 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* 🔁 Slow continuous rotation for the outer circle */
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-rotate {
+  animation: slowRotate 10s linear infinite;
+}
+
+/* ⬆️⬇️ Smooth floating animation for the arrow */
+@keyframes arrowFloat {
+  0%,
+  100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.animate-arrow-float {
+  animation: arrowFloat 2s ease-in-out infinite;
+}
+
+/* ✨ Smooth fade + slide-in for popup entry */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-entry {
+  animation: fadeInUp 0.7s ease forwards;
+}

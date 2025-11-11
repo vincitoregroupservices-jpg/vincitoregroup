@@ -5,6 +5,7 @@ import Stats1 from "@/components/sections/Stats1/Stats1";
 import WhyChooseVincitoreGroup from "@/components/sections/WhyChooseVincitoreGroup/WhyChooseVincitoreGroup";
 import HeroSection from "@/components/ui/HeroSection/HeroSection";
 import Line from "@/components/ui/Line/Line";
+import InvestPopup from '../components/ui/InvetPopup/InvetPopup'
 
 export const metadata = {
   title: "Vincitore Group - Your Vission, Our Foundation!",
@@ -69,6 +70,7 @@ export default function Home() {
       <WhyChooseVincitoreGroup />
       <Line />
       <QuestionSection />
+      <InvestPopup />
     </main>
   );
 }

@@ -1,9 +1,8 @@
 "use client";
-import { useState, use, useEffect } from "react";
+import { useState, use } from "react";
 import { notFound } from "next/navigation";
 import HeroSection from "@/components/ProjectPage/HeroSection";
 import Line from "@/components/ui/Line/Line";
-import Section from "@/components/ui/Section/Section";
 import Button from "@/components/ui/Button/Button";
 import {
   Dialog,
@@ -25,8 +24,6 @@ import LocationCTA from "@/components/ProjectPage/LocationCTA";
 import Gallery from "@/components/ProjectPage/Gallery";
 import Amenities from "@/components/ProjectPage/Amenities";
 import projectData from "@/data/projectData";
-import gsap from "gsap";
-
 
 
 export default function ProjectPage({ params }) {
@@ -52,7 +49,6 @@ export default function ProjectPage({ params }) {
   };
 
   const handleDownload = async (e) => {
-
     e.preventDefault();
     const { name, mobile } = formData;
 

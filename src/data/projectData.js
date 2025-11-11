@@ -46,7 +46,7 @@ const projectData = [
       priceFrom: "₹70* Lakhs",
     },
     residential: {
-      spaces: "3 & 4 BHK Luxury Apartments",
+      spaces: "4 & 3 BHK Luxury Apartments",
       units: "70 Luxury Units",
       sizeRange: "294 to 416 sq. yards",
       priceFrom: "₹1.03* Cr.",
@@ -353,7 +353,7 @@ const projectData = [
       priceFrom: "35* Lakh",
     },
     residential: {
-      spaces: "3 & 4 BHK Luxury Apartments + Alloted Car Parking",
+      spaces: "3 & 2 BHK Luxury Apartments + Alloted Car Parking",
       units: "267 Luxury Units",
       sizeRange: "152 to 214 sq. yards",
       priceFrom: "38* Lakh",
@@ -454,7 +454,7 @@ const projectData = [
     status: "Comming Soon",
     interest: ["Buy", "Invest", "Lease"],
     type: ["3BHK", "Shop"],
-    typeSummary: ["2 BHK & 3 BHK Luxury Flats", "Shops & Showrooms Available"],
+    typeSummary: ["3 & 2 BHK Luxury Flats", "Shops & Showrooms Available"],
     tagline: {
       quate: "A Landmark of Luxury and Convenience.",
       heading: "The 7 to Your New Address",
@@ -488,7 +488,7 @@ const projectData = [
       priceFrom: "₹50* Lakhs",
     },
     residential: {
-      spaces: "3 & 4 BHK Luxury Apartments + Alloted Parking",
+      spaces: "3 & 2 BHK Luxury Apartments + Alloted Parking",
       units: "168 Luxury Units",
       sizeRange: "164 to 242 sq. yards",
       priceFrom: "₹35.26* Lakhs",

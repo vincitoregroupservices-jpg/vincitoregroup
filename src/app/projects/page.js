@@ -16,7 +16,7 @@ import QuestionSection from "@/components/sections/QuestionSection/QuestionSecti
 import HeroSection from "@/components/ui/HeroSection/HeroSection";
 import { projectData } from "@/lib/projectsData";
 
-const Page = () => {
+const ProjectsPage = () => {
   const [search, setSearch] = useState("");
   const [filters, setFilters] = useState({
     category: ["all"],
@@ -341,4 +341,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ProjectsPage;
