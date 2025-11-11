@@ -64,9 +64,9 @@ export default function InvestPage() {
       />
       <AboutOurInvestments />
       <Line />
-      <WhyInvestWithUs />
-      <Line />
       <InvestForm />
+      <Line />
+      <WhyInvestWithUs />
       <Line />
       <GlimpsesOfOurJourney />
     </main>
