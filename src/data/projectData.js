@@ -33,7 +33,7 @@ const projectData = [
     ],
 
     Why: [
-      "Ready-to-Move Luxury 3 & 4 BHK Homes",
+      "Ready-to-Move Luxury 4 & 3 BHK Homes",
       "Prime Location with Excellent Connectivity",
       "Integrated Commercial & Residential Spaces",
       "Modern Amenities & Lush Green Landscapes",
@@ -313,13 +313,13 @@ const projectData = [
     contact: ["+916353101979"],
     status: "Under Construction",
     interest: ["Buy", "Invest", "Lease"],
-    type: ["3BHK", "Shop"],
-    typeSummary: ["2 BHK & 3 BHK Luxury Flats", "Shops & Showrooms Available"],
+    type: ["3BHK", "2BHK", "Shop"],
+    typeSummary: ["3 BHK & 2 BHK Luxury Flats", "Shops & Showrooms Available"],
     tagline: {
       quate: "Nature-Inspired Luxury Living.",
       heading: "Elevate Your Lifestyle",
       description:
-        "Vincitore Valley offers 2 & 3 BHK luxury homes in a serene environment with modern conveniences and lush green surroundings.",
+        "Vincitore Valley offers 3 & 2 BHK luxury homes in a serene environment with modern conveniences and lush green surroundings.",
     },
 
     location:
@@ -340,7 +340,7 @@ const projectData = [
     ],
 
     Why: [
-      "Newly Launched 2 & 3 BHK Luxury Homes",
+      "Newly Launched 3 & 2 BHK Luxury Homes",
       "Prime Location with Easy Accessibility",
       "Integrated Shops & Showrooms",
       "Modern Amenities & Lush Green Surroundings",
@@ -453,13 +453,13 @@ const projectData = [
     contact: ["+919033013137"],
     status: "Comming Soon",
     interest: ["Buy", "Invest", "Lease"],
-    type: ["3BHK", "Shop"],
+    type: ["3BHK", "2BHK", "Shop"],
     typeSummary: ["3 & 2 BHK Luxury Flats", "Shops & Showrooms Available"],
     tagline: {
       quate: "A Landmark of Luxury and Convenience.",
       heading: "The 7 to Your New Address",
       description:
-        "Offering 2 & 3 BHK luxury homes with integrated shops and modern amenities, The 7 Vincitore is crafted for urban lifestyles.",
+        "Offering 3 & 2 BHK luxury homes with integrated shops and modern amenities, The 7 Vincitore is crafted for urban lifestyles.",
     },
     location:
       "The 7 Vincitore, opposite Agriculture Karmavati Market, near D-Mart, New Vatva, Ahmedabad, 382440",
@@ -545,7 +545,7 @@ const projectData = [
     contact: ["+917802926276"],
     status: "Comming Soon",
     interest: ["Buy", "Invest", "Lease"],
-    type: ["3BHK", "Shop"],
+    type: ["5BHK"],
     typeSummary: ["5 BHK Super Luxury Bungalow", "Exclusive Gated Community"],
     tagline: {
       quate: "Exclusivity, Privacy, and Luxury Combined.",
