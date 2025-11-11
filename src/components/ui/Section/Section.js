@@ -8,27 +8,27 @@ gsap.registerPlugin(ScrollTrigger);
 const Section = ({ children, id, label, className = "" }) => {
   const sectionRef = useRef(null);
 
-  // useEffect(() => {
-  //   const el = sectionRef.current;
+  useEffect(() => {
+    const el = sectionRef.current;
 
-  //   gsap.from(el.children, {
-  //     opacity: 0,
-  //     y: 50,
-  //     duration: 1,
-  //     stagger: 0.2,
-  //     ease: "power3.out",
-  //     scrollTrigger: {
-  //       trigger: el,
-  //       start: "top 80%",
-  //       toggleActions: "play none none reverse",
-  //     },
-  //   });
+    gsap.from(el.children, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
+    });
 
-  //   // cleanup
-  //   return () => {
-  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  //   };
-  // }, []);
+    // cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 
   return (
     <section
