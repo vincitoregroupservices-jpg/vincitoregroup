@@ -5,7 +5,7 @@ import Stats1 from "@/components/sections/Stats1/Stats1";
 import WhyChooseVincitoreGroup from "@/components/sections/WhyChooseVincitoreGroup/WhyChooseVincitoreGroup";
 import HeroSection from "@/components/ui/HeroSection/HeroSection";
 import Line from "@/components/ui/Line/Line";
-import InvestPopup from '../components/ui/InvetPopup/InvetPopup'
+import InvestPopup from "../components/ui/InvetPopup/InvetPopup";
 
 export const metadata = {
   title: "Vincitore Group - Your Vission, Our Foundation!",
@@ -17,6 +17,30 @@ export const metadata = {
     "Real Estate Developers",
     "Premium Builders Ahmedabad",
     "Residential Projects Ahmedabad",
+    "Real estate developer in ahmedabad",
+    "New construction homes",
+    "Property development projects",
+    "Commercial real estate developer",
+    "Real estate investments",
+    "Construction company in Ahmedabad",
+    "Best builder in Ahmedabad",
+    "Top construction company Ahmedabad",
+    "Real estate developer Ahmedabad",
+    "Property developer in Ahmedabad",
+    "New projects in Ahmedabad",
+    "Building contractor Ahmedabad",
+    "Civil construction company Ahmedabad",
+    "Residential projects in Ahmedabad",
+    "2 BHK flats in Ahmedabad",
+    "3 BHK apartments Ahmedabad",
+    "Affordable homes Ahmedabad",
+    "Luxury flats in Ahmedabad",
+    "New housing scheme Ahmedabad",
+    "Commercial property in Ahmedabad",
+    "Office space in Ahmedabad",
+    "Shops for sale in Ahmedabad",
+    "Commercial building Ahmedabad",
+    "Corporate offices Ahmedabad",
   ],
   openGraph: {
     title: "Vincitore Group | Luxury Construction Company in Ahmedabad",

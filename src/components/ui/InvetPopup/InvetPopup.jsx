@@ -28,13 +28,9 @@ const InvetPopup = () => {
           width={200}
           className="h-28 w-28 animate-slow-rotate"
         />
-        <Image
-          src="/FullAerrow.svg"
-          alt="Arrow Icon"
-          height={60}
-          width={60}
-          className="h-10 w-auto absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 animate-arrow-float"
-        />
+        <h1 className="text-white font-semibold text-center text-[10px] absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 animate-arrow-float">
+          More <br/> Info
+        </h1>
       </Link>
     </div>
   );

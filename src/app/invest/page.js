@@ -20,6 +20,11 @@ export const metadata = {
     "High Return Investments",
     "Commercial Properties",
     "Residential Projects",
+    "Property investment in Ahmedabad",
+    "Real estate investment Ahmedabad",
+    "Best property to invest in Ahmedabad",
+    "High return property Ahmedabad",
+    "New investment projects Ahmedabad",
   ],
   openGraph: {
     title:
