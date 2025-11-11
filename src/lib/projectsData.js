@@ -107,7 +107,7 @@ export const projectData = [
     type: ["5bhk"],
     fullAddress:
       "Shivalay Bungalows, Narmada Canal, opposite subham farm, Naroda Dehgam Highway, Raipur",
-    category_title_1: "Plot",
+    category_title_1: "Bungalows",
     category_price_1: "3.50* Cr",
     category_size_1: "478 to 1389 sq. yards",
     category_title_2: "Bungalows",
