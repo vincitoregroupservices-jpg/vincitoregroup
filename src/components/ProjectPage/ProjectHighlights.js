@@ -21,6 +21,7 @@ export default function ProjectHighlights({ project }) {
   const hasResidential = !!project.residential;
   const hasCommercial = !!project.commercial;
 
+  // Determine what type is currently displayed
   const currentType =
     current === 0 && hasResidential
       ? project.residential
@@ -28,68 +29,81 @@ export default function ProjectHighlights({ project }) {
       ? project.commercial
       : null;
 
-  const currentTitle = current === 0 ? "Residential Spaces" : "Commercial Spaces";
+  // Handle single-type project
+  const showTabs = hasResidential && hasCommercial;
+  const activeType =
+    !showTabs && hasResidential
+      ? "Residential Spaces"
+      : !showTabs && hasCommercial
+      ? "Commercial Spaces"
+      : current === 0
+      ? "Residential Spaces"
+      : "Commercial Spaces";
+
+  const displayType = showTabs ? currentType : hasResidential ? project.residential : project.commercial;
 
   return (
     <Section>
       <SectionTitle text={`${project.name} - Project Highlights`} />
 
-      {/* 🔁 Tab Switcher */}
-      <div className="bg-gold-light relative rounded-full flex text-center text-xl font-medium cursor-pointer w-full md:w-[600px] mx-auto mb-8">
-        {hasResidential && (
-          <h1
-            onClick={() => setCurrent(0)}
-            className={`w-[50%] py-3 rounded-full z-10 transition-colors duration-200 ${
-              current === 0 ? "text-black1" : "text-black1"
-            }`}
-          >
-            Residential
-          </h1>
-        )}
-        {hasCommercial && (
-          <h1
-            onClick={() => setCurrent(1)}
-            className={`w-[50%] py-3 rounded-full z-10 transition-colors duration-200 ${
-              current === 1 ? "text-black1" : "text-black1"
-            }`}
-          >
-            Commercial
-          </h1>
-        )}
-        <span
-          className={`absolute top-0 left-0 w-[50%] h-full bg-gold rounded-full transition-transform duration-300 ease-in-out`}
-          style={{
-            transform: current === 0 ? "translateX(0%)" : "translateX(100%)",
-          }}
-        />
-      </div>
+      {/* 🔁 Tab Switcher — only show if both types exist */}
+      {showTabs && (
+        <div className="bg-gold-light relative rounded-full flex text-center text-xl font-medium cursor-pointer w-full md:w-[600px] mx-auto ">
+          {hasResidential && (
+            <h1
+              onClick={() => setCurrent(0)}
+              className={`w-[50%] py-3 rounded-full z-10 transition-colors duration-200 ${
+                current === 0 ? "text-black1" : "text-black1"
+              }`}
+            >
+              Residential
+            </h1>
+          )}
+          {hasCommercial && (
+            <h1
+              onClick={() => setCurrent(1)}
+              className={`w-[50%] py-3 rounded-full z-10 transition-colors duration-200 ${
+                current === 1 ? "text-black1" : "text-black1"
+              }`}
+            >
+              Commercial
+            </h1>
+          )}
+          <span
+            className={`absolute top-0 left-0 w-[50%] h-full bg-gold rounded-full transition-transform duration-300 ease-in-out`}
+            style={{
+              transform: current === 0 ? "translateX(0%)" : "translateX(100%)",
+            }}
+          />
+        </div>
+      )}
 
       {/* 💼 Card Section */}
-      {currentType ? (
+      {displayType ? (
         <div className="p-10 min-w-full md:min-w-[500px] bg-gold-lighter rounded-xl flex flex-col gap-5 items-center justify-center max-w-3xl mx-auto text-center">
           <div className="flex gap-3 flex-col">
-            <h3 className="text-3xl font-semibold">{currentTitle}</h3>
+            <h3 className="text-3xl font-semibold">{activeType}</h3>
             <span className="bg-gold-dark h-[2px] w-auto mx-20" />
           </div>
 
           <div className="flex flex-col gap-1 items-center justify-center">
             <h2 className="text-2xl text-black-2 font-medium">
-              {currentType.spaces}
+              {displayType.spaces}
             </h2>
-            <p className="text-black-1 font-medium">{currentType.units}</p>
+            <p className="text-black-1 font-medium">{displayType.units}</p>
           </div>
 
           <div className="flex flex-col gap-1 items-center justify-center">
             <p className="text-black-1 font-medium">Sizes:</p>
             <h2 className="text-3xl text-gold-dark font-semibold">
-              {currentType.sizeRange}
+              {displayType.sizeRange}
             </h2>
           </div>
 
           <div className="flex flex-col gap-1 items-center justify-center">
             <p className="text-black-1 font-medium">Price Starting:</p>
             <h2 className="text-3xl text-gold-dark font-semibold">
-              {currentType.priceFrom}
+              {displayType.priceFrom}
             </h2>
           </div>
 
@@ -109,9 +123,7 @@ export default function ProjectHighlights({ project }) {
                       href={`tel:${ele}`}
                       className="text-xl underline cursor-pointer flex gap-3 items-center"
                       key={index}
-                      onClick={() => {
-                        setDialogOpen(false);
-                      }}
+                      onClick={() => setDialogOpen(false)}
                     >
                       <Image
                         src={"/icons/Call.svg"}
