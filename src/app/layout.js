@@ -21,6 +21,25 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // return (
+  //   <html lang="en">
+  //     <head>
+  //       {/* ✅ Material Symbols Icon Font */}
+  //       <link
+  //         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+  //         rel="stylesheet"
+  //       />
+  //     </head>
+  //     <body className={`${BricolageGrotesque.className} bg-background`}>
+  //       <Navbar />
+  //       {children}
+
+  //       <ToastContainer position="bottom-right" autoClose={3000} />
+  //       <Footer />
+  //     </body>
+  //   </html>
+  // );
+
   return (
     <html lang="en">
       <head>
@@ -30,12 +49,12 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={`${BricolageGrotesque.className} bg-background`}>
-        <Navbar />
-        {children}
-        <ToastContainer position="bottom-right" autoClose={3000} />
-
-        <Footer />
+      <body
+        className={`${BricolageGrotesque.className} bg-background h-screen flex items-center justify-center`}
+      >
+        <h1 className="text-gold-dark text-3xl font-semibold">
+          Comming Soon...
+        </h1>
       </body>
     </html>
   );
