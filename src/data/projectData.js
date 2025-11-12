@@ -477,7 +477,7 @@ const projectData = [
     ],
     Why: [
       "Luxury Homes comming soon",
-      "Prime Location to new vatava",
+      "Prime Location to new vatva",
       "Shops, Showrooms & Flats in One Landmark",
       "Spacious Green Areas & Modern Amenities",
     ],
