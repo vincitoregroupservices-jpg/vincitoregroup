@@ -58,17 +58,23 @@ const OurSignatureDevelopments = () => {
             />
           ))}
         </div>
-        <button className={`${styles.scrollBtn} ${styles.left}`} onClick={scrollLeft}>
+        <button
+          className={`${styles.scrollBtn} ${styles.left}`}
+          onClick={scrollLeft}
+        >
           ←
         </button>
-        <button className={`${styles.scrollBtn} ${styles.right}`} onClick={scrollRight}>
+        <button
+          className={`${styles.scrollBtn} ${styles.right}`}
+          onClick={scrollRight}
+        >
           →
         </button>
       </Section>
       <Section className="mt-10">
         <CTASection
           title={["We don’t just construct buildings", "We craft stories."]}
-          description="Every detail serves a purpose, every purpose serves the people who call it theirs Every detail serves a purpose."
+          description="Every detail has intention, every intention reflects the people we build for — because purpose shapes perfection."
           btnText="Explore All Projects"
           url="/projects"
         />
