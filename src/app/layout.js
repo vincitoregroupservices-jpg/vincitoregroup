@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer/Footer";
 import Navbar from "@/components/layout/Navbar/Navbar";
 import "leaflet/dist/leaflet.css";
 import { ToastContainer } from "react-toastify";
+import { Analytics } from "@vercel/analytics/next";
 
 const BricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
       <body className={`${BricolageGrotesque.className} bg-background`}>
         <Navbar />
         {children}
+        <Analytics />
 
         {/* <ToastContainer position="bottom-right" autoClose={3000} /> */}
         <Footer />
