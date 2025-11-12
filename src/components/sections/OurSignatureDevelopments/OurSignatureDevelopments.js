@@ -68,7 +68,7 @@ const OurSignatureDevelopments = () => {
       <Section className="mt-10">
         <CTASection
           title={["We don’t just construct buildings", "We craft stories."]}
-          description="Every detail serves a purpose, every purpose serves the people who call it theirs Every detail serves a purpose, every purpose serves the people who call it theirs"
+          description="Every detail serves a purpose, every purpose serves the people who call it theirs Every detail serves a purpose."
           btnText="Explore All Projects"
           url="/projects"
         />
