@@ -67,87 +67,91 @@ const InvestForm = () => {
   };
 
   return (
-    <section className="flex flex-col gap-5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 ">
-      <SectionTitle text="Enquiry for Investors" />
+    <>
+      <section className="flex flex-col gap-5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 ">
+        <SectionTitle text="Enquiry for Investors" />
 
-      <div className="flex flex-row justify-center gap-5">
-        <Image
-          height={1000}
-          width={1000}
-          src={"/images/hand-shake.png"}
-          alt="Hand Shake"
-          className="w-[400px] h-[300px] rounded-2xl hidden md:flex"
-        />
-        <form className="flex flex-col gap-3 w-[500px]" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="text-base bg-gold-lighter w-full py-3 rounded-sm px-5 placeholder:text-gold-dark text-black-2 outline-none"
-            placeholder="Your Name"
-            required
+        <div className="flex flex-row justify-center gap-5">
+          <Image
+            height={1000}
+            width={1000}
+            src={"/images/hand-shake.png"}
+            alt="Hand Shake"
+            className="w-[400px] h-[300px] rounded-2xl hidden md:flex"
           />
-
-          <div className="text-base bg-gold-lighter h-[50px] flex items-center rounded-sm">
-            <span className="pl-5 text-black-2">+91</span>
+          <form
+            className="flex flex-col gap-3 w-[500px]"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
-              name="mobile"
-              value={formData.mobile}
+              name="name"
+              value={formData.name}
               onChange={handleChange}
-              maxLength={10}
-              className="bg-gold-lighter h-full w-full px-3 py-3 placeholder:text-gold-dark text-black-2 outline-none"
-              placeholder="Mobile Number"
+              className="text-base bg-gold-lighter w-full py-3 rounded-sm px-5 placeholder:text-gold-dark text-black-2 outline-none"
+              placeholder="Your Name"
               required
             />
-          </div>
 
-          <input
-            type="text"
-            name="amount"
-            value={formData.amount}
-            onChange={handleChange}
-            className="text-base bg-gold-lighter w-full py-3 rounded-sm px-5 placeholder:text-gold-dark text-black-2 outline-none"
-            placeholder="Approximate Amount to Invest (in Lacs)"
-            required
-          />
+            <div className="text-base bg-gold-lighter h-[50px] flex items-center rounded-sm">
+              <span className="pl-5 text-black-2">+91</span>
+              <input
+                type="text"
+                name="mobile"
+                value={formData.mobile}
+                onChange={handleChange}
+                maxLength={10}
+                className="bg-gold-lighter h-full w-full px-3 py-3 placeholder:text-gold-dark text-black-2 outline-none"
+                placeholder="Mobile Number"
+                required
+              />
+            </div>
 
-          <Select
-            value={formData.interest}
-            onValueChange={(value) =>
-              setFormData({ ...formData, interest: value })
-            }
-          >
-            <SelectTrigger className="text-base border-none shadow-none w-fit bg-gold-lighter text-gold-dark">
-              {formData.interest || "Interest Type"}
-            </SelectTrigger>
-            <SelectContent className="bg-gold-lighter text-gold-dark">
-              <SelectItem className="focus:bg-gold-light" value="Residential">
-                Residential
-              </SelectItem>
-              <SelectItem className="focus:bg-gold-light" value="Commercial">
-                Commercial
-              </SelectItem>
-            </SelectContent>
-          </Select>
-
-          <div className="flex flex-col items-start mt-2">
-            <Button
-              type="submit"
-              text="Submit"
-              className="w-[140px] text-sm py-3 mb-2"
-              loading={isLoading}
+            <input
+              type="text"
+              name="amount"
+              value={formData.amount}
+              onChange={handleChange}
+              className="text-base bg-gold-lighter w-full py-3 rounded-sm px-5 placeholder:text-gold-dark text-black-2 outline-none"
+              placeholder="Approximate Amount to Invest (in Lacs)"
+              required
             />
-            <p className="text-[10px] text-black-3">
-              *By submitting you agree on our Terms and Conditions
-            </p>
-          </div>
-        </form>
-      </div>
 
+            <Select
+              value={formData.interest}
+              onValueChange={(value) =>
+                setFormData({ ...formData, interest: value })
+              }
+            >
+              <SelectTrigger className="text-base border-none shadow-none w-fit bg-gold-lighter text-gold-dark">
+                {formData.interest || "Interest Type"}
+              </SelectTrigger>
+              <SelectContent className="bg-gold-lighter text-gold-dark">
+                <SelectItem className="focus:bg-gold-light" value="Residential">
+                  Residential
+                </SelectItem>
+                <SelectItem className="focus:bg-gold-light" value="Commercial">
+                  Commercial
+                </SelectItem>
+              </SelectContent>
+            </Select>
+
+            <div className="flex flex-col items-start mt-2">
+              <Button
+                type="submit"
+                text="Submit"
+                className="w-[140px] text-sm py-3 mb-2"
+                loading={isLoading}
+              />
+              <p className="text-[10px] text-black-3">
+                *By submitting you agree on our Terms and Conditions
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
       <ToastContainer position="bottom-right" autoClose={3000} />
-    </section>
+    </>
   );
 };
 

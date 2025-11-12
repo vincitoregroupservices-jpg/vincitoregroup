@@ -8,7 +8,7 @@ import Line from "@/components/ui/Line/Line";
 import InvestPopup from "../components/ui/InvetPopup/InvetPopup";
 
 export const metadata = {
-  title: "Vincitore Group - Your Vission, Our Foundation!",
+  title: "Vincitore Group - Your Vision, Our Foundation!",
   description:
     "Vincitore Group builds premium residential and commercial projects in Ahmedabad. Discover luxury, quality, and trust with Vincitore Group’s signature developments.",
   keywords: [
@@ -41,6 +41,7 @@ export const metadata = {
     "Shops for sale in Ahmedabad",
     "Commercial building Ahmedabad",
     "Corporate offices Ahmedabad",
+    "Falts in Ahmedabad",
   ],
   openGraph: {
     title: "Vincitore Group | Luxury Construction Company in Ahmedabad",
