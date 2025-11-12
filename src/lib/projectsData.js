@@ -86,7 +86,7 @@ export const projectData = [
     interest: ["Buy", "Invest", "Lease"],
     type: ["2bhk", "3bhk", "shop"],
     fullAddress:
-      "The 7 Vincitore, opposite Agriculture Karmavati Market, near D-Mart, New Vatva, Ahmedabad, 382440",
+      "The 7 Vincitore, opposite Agriculture Karnavati Market, near D-Mart, New Vatva, Ahmedabad, 382440",
     category_title_1: "Flat",
     category_price_1: "35.26* Lakh",
     category_size_1: "164 to 242 sq. yards",

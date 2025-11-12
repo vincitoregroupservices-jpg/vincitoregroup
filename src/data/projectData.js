@@ -462,7 +462,7 @@ const projectData = [
         "Offering 3 & 2 BHK luxury homes with integrated shops and modern amenities, The 7 Vincitore is crafted for urban lifestyles.",
     },
     location:
-      "The 7 Vincitore, opposite Agriculture Karmavati Market, near D-Mart, New Vatva, Ahmedabad, 382440",
+      "The 7 Vincitore, opposite Agriculture Karnavati Market, near D-Mart, New Vatva, Ahmedabad, 382440",
     locationSummary: "New Vatva",
     locationLink: "https://maps.app.goo.gl/9sbzBtmpa9cRDjkm8",
     locationEmbed:
@@ -476,8 +476,8 @@ const projectData = [
       "D-Mart only 250m away",
     ],
     Why: [
-      "Ready-to-Move Luxury Homes",
-      "Prime Location to Hanspura",
+      "Luxury Homes comming soon",
+      "Prime Location to new vatava",
       "Shops, Showrooms & Flats in One Landmark",
       "Spacious Green Areas & Modern Amenities",
     ],
