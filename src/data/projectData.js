@@ -17,7 +17,7 @@ const projectData = [
         "Premium residences & commercial spaces crafted for those who dream bigger.",
     },
     location:
-      "Vincitore Sky, near Anante Saure Complex, opposite Sarthi Bungalow, Hanspura, Ahmedabad, 382330",
+      "Vincitore Sky, near Anante Saure Complex, opposite Sarthi Bunglows, Hanspura, Ahmedabad, 382330",
     locationSummary: "Hanspura",
     locationLink: "https://maps.app.goo.gl/ekFyVrkHgf4SyHPRA",
     locationEmbed:
@@ -537,8 +537,8 @@ const projectData = [
     brochure: "/projects/the-7-vincitore/The7Vincitore.pdf",
   },
   {
-    slug: "shivalay-bungalows",
-    name: "Shivalay Bungalows",
+    slug: "shivalay-bunglows",
+    name: "Shivalay Bunglows",
     thumbnail: "/projects/shivalay-bunglols/ShivalayBunglols-2.jpg",
     thumbnail1: "/projects/shivalay-bunglols/ShivalayBunglols-3.jpg",
     thumbnail2: "/projects/shivalay-bunglols/ShivalayBunglols-4.jpg",
@@ -546,16 +546,16 @@ const projectData = [
     status: "Coming Soon",
     interest: ["Buy", "Invest", "Lease"],
     type: ["5BHK"],
-    typeSummary: ["5 BHK Super Luxury Bungalow", "Exclusive Gated Community"],
+    typeSummary: ["5 BHK Super Luxury Bunglow", "Exclusive Gated Community"],
     tagline: {
       quate: "Exclusivity, Privacy, and Luxury Combined.",
-      heading: "Your Dream Bungalow Awaits",
+      heading: "Your Dream Bunglows Awaits",
       description:
-        "Shivalay Bungalows offer 5 BHK super luxury homes in a gated community, with scenic surroundings and world-class amenities.",
+        "Shivalay Bunglows offer 5 BHK super luxury homes in a gated community, with scenic surroundings and world-class amenities.",
     },
 
     location:
-      "Shivalay Bungalows, Narmada Canal, opposite subham farm, Naroda Dehgam Highway, Raipur",
+      "Shivalay Bunglows, Narmada Canal, opposite shubham farm, Naroda Dehgam Highway, Raipur",
     locationSummary: "Naroda Dehgam Highway, Raipur",
     locationLink: "https://maps.app.goo.gl/ANkEcXQsUoFsrTAK6",
     locationEmbed:
@@ -567,13 +567,13 @@ const projectData = [
       "Surrounded by Scenic Farms",
     ],
     Why: [
-      "5 BHK Super Luxury Bungalows",
+      "5 BHK Super Luxury Bunglows",
       "Exclusive Gated Community for Privacy",
       "Scenic Surroundings & Prime Location",
       "Premium Amenities for Modern Living",
     ],
     residential: {
-      spaces: "5 BHK Super Luxury Bungalow",
+      spaces: "5 BHK Super Luxury Bunglow",
       units: "21 Super Luxury Units",
       sizeRange: "668 to 842 sq. yards",
       priceFrom: "₹3.50* Cr.",
