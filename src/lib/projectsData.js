@@ -99,8 +99,8 @@ export const projectData = [
     link: "https://www.google.com/maps/embed?...",
   },
   {
-    slug: "shivalay-bungalows",
-    title: "Shivalay Bungalows",
+    slug: "shivalay-bunglows",
+    title: "Shivalay Bunglows",
     location: "Naroda Dehgam Highway, Raipur",
     category: ["residential", "commercial"],
     interest: ["Buy", "Invest", "Lease"],
