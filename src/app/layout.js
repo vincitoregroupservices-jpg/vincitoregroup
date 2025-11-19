@@ -15,9 +15,9 @@ export const metadata = {
   title: "Vincitore Group",
   description: "Transforming dreams into timeless architectural landmarks.",
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/faviconicog",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
