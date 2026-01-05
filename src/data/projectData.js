@@ -451,7 +451,7 @@ const projectData = [
     thumbnail1: "/projects/the-7-vincitore/The7Vincitore-4.jpeg",
     thumbnail2: "/projects/the-7-vincitore/The7Vincitore-3.jpeg",
     contact: ["+919033013137"],
-    status: "Coming Soon",
+    status: "Under Construction",
     interest: ["Buy", "Invest", "Lease"],
     type: ["3BHK", "2BHK", "Shop"],
     typeSummary: ["3 & 2 BHK Luxury Flats", "Shops & Showrooms Available"],
@@ -476,7 +476,7 @@ const projectData = [
       "D-Mart only 250m away",
     ],
     Why: [
-      "Luxury Homes comming soon",
+      "Luxury Homes under construction",
       "Prime Location to new vatva",
       "Shops, Showrooms & Flats in One Landmark",
       "Spacious Green Areas & Modern Amenities",
