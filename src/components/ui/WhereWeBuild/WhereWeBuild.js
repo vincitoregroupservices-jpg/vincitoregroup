@@ -9,7 +9,7 @@ const locations = [
   { name: "Vastral", projects: 1, status: "Ready to Possession time" },
   { name: "Hathijan", projects: 1, status: "Ready to Possession time" },
   { name: "Raipur Dabhoda", projects: 1, status: "Comming Soon" },
-  { name: "New Vatva", projects: 1, status: "Construction" },
+  { name: "New Vatva", projects: 1, status: "Under Construction" },
 ];
 
 // Utility function to get status styles
