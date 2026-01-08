@@ -95,7 +95,7 @@ export const projectData = [
     category_size_2: "400 to 1086 sq. ft",
     imageUrl: "/projects/the-7-vincitore/The7Vincitore-2.jpeg",
     review: "4.8",
-    status: "Comming Soon",
+    status: "Under Construction",
     link: "https://www.google.com/maps/embed?...",
   },
   {
