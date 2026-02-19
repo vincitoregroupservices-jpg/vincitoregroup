@@ -64,7 +64,7 @@ export const teamMembers = [
     image: "/team/Nimit-Hirpara.png",
   },
   {
-    name: "Mr. Dhrumil Vaddoriya",
+    name: "Mr. Dhruvil Valdoriya",
     role: "Construction Engineer",
     image: "/team/Dhrumil-Vaddoriya.png",
   },

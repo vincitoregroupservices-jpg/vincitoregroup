@@ -520,9 +520,9 @@ const projectData = [
       { label: "Society Office", icon: "business" },
     ],
     rera: {
-      reraNumber: "Coming Soon",
-      reraLink: "https://gujrera.gujarat.gov.in/",
-      qr: "vincitore-sky.png",
+      reraNumber: "MAA16479",
+      reraLink: "https://gujrera.gujarat.gov.in/?/#/pp?id=Mjk4MTg=",
+      qr: "Rerathe7vincitore.png",
     },
     gallery: [
       { src: "/projects/the-7-vincitore/The7Vincitore-1.jpeg" },
