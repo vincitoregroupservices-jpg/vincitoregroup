@@ -522,7 +522,7 @@ const projectData = [
     rera: {
       reraNumber: "MAA16479",
       reraLink: "https://gujrera.gujarat.gov.in/?/#/pp?id=Mjk4MTg=",
-      qr: "Rerathe7vincitore.png",
+      qr: "the7vincitore.png",
     },
     gallery: [
       { src: "/projects/the-7-vincitore/The7Vincitore-1.jpeg" },
