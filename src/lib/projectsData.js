@@ -43,6 +43,7 @@ export const projectData = [
     slug: "vincitore-vintage",
     title: "Vincitore Vintage",
     location: "New Vastral",
+    category: ["residential", "commercial"],
     interest: ["Buy", "Invest", "Lease"],
     type: ["3bhk", "shop"],
     fullAddress:
@@ -102,7 +103,7 @@ export const projectData = [
     slug: "shivalay-bunglows",
     title: "Shivalay Bunglows",
     location: "Naroda Dehgam Highway, Raipur",
-    category: ["residential", "commercial"],
+    category: ["residential"],
     interest: ["Buy", "Invest", "Lease"],
     type: ["5bhk"],
     fullAddress:
