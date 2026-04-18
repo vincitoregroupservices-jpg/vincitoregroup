@@ -31,7 +31,7 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
             stagger: 0.15,
             ease: "power3.out",
           },
-          "-=0.5"
+          "-=0.5",
         )
         .from(
           buttonRef.current,
@@ -41,7 +41,7 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
             duration: 0.8,
             ease: "back.out(1.7)",
           },
-          "-=0.3"
+          "-=0.3",
         );
     }
   }, []);
@@ -72,7 +72,7 @@ const HeroSection = ({ title, decription, btnText, btnHref, image, video }) => {
       <div className="w-full absolute inset-0 bg-black opacity-80"></div>
       <div className="w-[90%] relative z-10 px-5 max-w-3xl flex flex-col gap-6">
         <div>
-          <h1 className="text-5xl md:text-7xl font-light text-gold">
+          <h1 className="text-4xl md:text-7xl font-light text-gold">
             {title.map((text, index) => (
               <div key={index} ref={(el) => (titleRef.current[index] = el)}>
                 {text}
