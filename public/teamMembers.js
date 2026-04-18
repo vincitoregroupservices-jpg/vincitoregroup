@@ -15,6 +15,7 @@ export const teamMembers = [
     image: "/team/Prashant-Modi.png",
   },
   { name: "Mr. Vipul Donga", role: "Director", image: "/team/Vipul-Donga.png" },
+  { name: "Mr. Neev Donga", role: "Director", image: "/team/Neev-Donga.png" },
   {
     name: "Mr. Sudhir Kachhadiya",
     role: "Director",
