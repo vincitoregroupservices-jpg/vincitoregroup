@@ -150,7 +150,7 @@ const Navbar = () => {
 
       {/* Call Button (Mobile) */}
       <div className="flex md:w-[40%] md:hidden items-center justify-end">
-        <Link href={"tel:+916353101979"}>
+        <Link href={"tel:+919512808909"}>
           <Image
             src={"/icons/Call.svg"}
             width={3000}
@@ -164,7 +164,7 @@ const Navbar = () => {
 
       {/* Call Button (Desktop) */}
       <div className="hidden md:w-[40%] md:flex items-center justify-end">
-        <Link href={"tel:+916353101979"}>
+        <Link href={"tel:+919512808909"}>
           <Button text={"Enquire Now"} />
         </Link>
       </div>
@@ -192,7 +192,7 @@ const Navbar = () => {
           ))}
 
           {/* Enquiry Button */}
-          <Link ref={btnRef} href={"tel:+916353101979"}>
+          <Link ref={btnRef} href={"tel:+919512808909"}>
             <Button text={"Enquiry Now"} />
           </Link>
         </div>

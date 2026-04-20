@@ -2,14 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 
-// ========================
-// Config / Variables
-// ========================
 const companyInfo = {
-  phone: ["+91 63531 01979", "+91 90330 13137"],
+  phone: ["+91 9512 808 909"],
   email: "vincitoregroup07@gmail.com",
   socialLinks: {
-    whatsapp: "https://wa.me/916353101979",
+    whatsapp: "https://wa.me/919512808909",
     facebook: "https://www.facebook.com/share/19o7C1AuQ1/?mibextid=wwXIfr",
     instagram:
       "https://www.instagram.com/_vincitore_group_?igsh=MTltMHN0anFyZGo2Yw==",

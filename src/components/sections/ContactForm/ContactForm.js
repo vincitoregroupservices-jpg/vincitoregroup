@@ -83,26 +83,10 @@ const ContactForm = () => {
                 className="h-5 w-5"
               />
               <a
-                href="tel:+916353101979"
+                href="tel:+919512808909"
                 className="text-black-3 underline text-xl"
               >
-                +91 63531 01979
-              </a>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <Image
-                src={"/icons/Call.svg"}
-                height={200}
-                width={200}
-                alt="call"
-                className="h-5 w-5"
-              />
-              <a
-                href="tel:+919033013137"
-                className="text-black-3 underline text-xl"
-              >
-                +91 90330 13137
+                +91 9512 808 909
               </a>
             </div>
 
