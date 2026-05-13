@@ -546,7 +546,7 @@ const projectData = [
     thumbnail1: "/projects/shivalay-bunglols/ShivalayBunglols-3.jpg",
     thumbnail2: "/projects/shivalay-bunglols/ShivalayBunglols-4.jpg",
     contact: ["+919512808909"],
-    status: "Coming Soon",
+    status: "Under Construction",
     interest: ["Buy", "Invest", "Lease"],
     type: ["5BHK"],
     typeSummary: ["5 BHK Super Luxury Bunglow", "Exclusive Gated Community"],
@@ -599,9 +599,9 @@ const projectData = [
       { label: "Personal Parking", icon: "local_parking" },
     ],
     rera: {
-      reraNumber: "Coming Soon",
-      reraLink: "https://gujrera.gujarat.gov.in/",
-      qr: "vincitore-sky.png",
+      reraNumber: "RAA16828",
+      reraLink: "https://gujrera.gujarat.gov.in/?/#/pp?id=MzA0MTY=",
+      qr: "ShivalayBunglows.png",
     },
     gallery: [
       { src: "/projects/shivalay-bunglols/ShivalayBunglols-1.jpg" },
