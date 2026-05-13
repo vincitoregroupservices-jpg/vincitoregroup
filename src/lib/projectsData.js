@@ -116,7 +116,7 @@ export const projectData = [
     category_size_2: "478 to 1389 sq. yards",
     imageUrl: "/projects/shivalay-bunglols/ShivalayBunglols-2.jpg",
     review: "4.8",
-    status: "Comming Soon",
+    status: "Under Construction",
     link: "https://www.google.com/maps/embed?...",
   },
 ];
